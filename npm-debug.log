@@ -1,0 +1,2774 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'forever' ]
+2 info using npm@2.11.2
+3 info using node@v0.12.6
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'forever', null ]
+7 verbose cache add spec forever
+8 silly cache add parsed spec { raw: 'forever',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'forever',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: '*',
+8 silly cache add   type: 'range' }
+9 silly addNamed forever@*
+10 verbose addNamed "*" is a valid semver range for forever
+11 silly addNameRange { name: 'forever', range: '*', hasData: false }
+12 silly mapToRegistry name forever
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/forever
+16 verbose addNameRange registry:https://registry.npmjs.org/forever not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/forever
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 14:36:58
+20 verbose request using bearer token for auth
+21 verbose request id 33bac8e681ae14b9
+22 http request GET https://registry.npmjs.org/forever
+23 http 200 https://registry.npmjs.org/forever
+24 silly get cb [ 200,
+24 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+24 silly get     etag: '"8M983OGFIKBAH49TLUT0Y8JZT"',
+24 silly get     'content-type': 'application/json',
+24 silly get     'cache-control': 'max-age=300',
+24 silly get     'content-length': '85628',
+24 silly get     'accept-ranges': 'bytes',
+24 silly get     date: 'Wed, 11 May 2016 17:37:02 GMT',
+24 silly get     via: '1.1 varnish',
+24 silly get     connection: 'keep-alive',
+24 silly get     'x-served-by': 'cache-atl6240-ATL',
+24 silly get     'x-cache': 'MISS',
+24 silly get     'x-cache-hits': '0',
+24 silly get     'x-timer': 'S1462988222.090124,VS0,VE178',
+24 silly get     vary: 'Accept-Encoding' } ]
+25 verbose get saving forever to /root/.npm/registry.npmjs.org/forever/.cache.json
+26 silly addNameRange number 2 { name: 'forever', range: '*', hasData: true }
+27 silly addNameRange versions [ 'forever',
+27 silly addNameRange   [ '0.6.0',
+27 silly addNameRange     '0.6.1',
+27 silly addNameRange     '0.6.2',
+27 silly addNameRange     '0.6.3',
+27 silly addNameRange     '0.6.4',
+27 silly addNameRange     '0.6.5',
+27 silly addNameRange     '0.6.6',
+27 silly addNameRange     '0.6.7',
+27 silly addNameRange     '0.6.8',
+27 silly addNameRange     '0.6.9',
+27 silly addNameRange     '0.7.0',
+27 silly addNameRange     '0.7.1',
+27 silly addNameRange     '0.7.2',
+27 silly addNameRange     '0.7.3',
+27 silly addNameRange     '0.7.4',
+27 silly addNameRange     '0.7.5',
+27 silly addNameRange     '0.8.0',
+27 silly addNameRange     '0.8.1',
+27 silly addNameRange     '0.8.2',
+27 silly addNameRange     '0.8.3',
+27 silly addNameRange     '0.8.4',
+27 silly addNameRange     '0.8.5',
+27 silly addNameRange     '0.9.0',
+27 silly addNameRange     '0.9.1',
+27 silly addNameRange     '0.9.2',
+27 silly addNameRange     '0.10.0',
+27 silly addNameRange     '0.10.5',
+27 silly addNameRange     '0.10.6',
+27 silly addNameRange     '0.10.7',
+27 silly addNameRange     '0.10.8',
+27 silly addNameRange     '0.10.9',
+27 silly addNameRange     '0.10.10',
+27 silly addNameRange     '0.10.11',
+27 silly addNameRange     '0.11.0',
+27 silly addNameRange     '0.11.1',
+27 silly addNameRange     '0.12.0',
+27 silly addNameRange     '0.13.0',
+27 silly addNameRange     '0.14.1',
+27 silly addNameRange     '0.14.2',
+27 silly addNameRange     '0.15.0',
+27 silly addNameRange     '0.15.1' ] ]
+28 silly addNamed forever@0.15.1
+29 verbose addNamed "0.15.1" is a plain semver version for forever
+30 silly mapToRegistry name forever
+31 silly mapToRegistry using default registry
+32 silly mapToRegistry registry https://registry.npmjs.org/
+33 silly mapToRegistry uri https://registry.npmjs.org/forever
+34 verbose addRemoteTarball https://registry.npmjs.org/forever/-/forever-0.15.1.tgz not in flight; adding
+35 verbose addRemoteTarball [ 'https://registry.npmjs.org/forever/-/forever-0.15.1.tgz',
+35 verbose addRemoteTarball   '5e4e3d4ef946bef88ddcb9cc7412e478ad19e04e' ]
+36 info retry fetch attempt 1 at 14:37:04
+37 info attempt registry request try #1 at 14:37:04
+38 http fetch GET https://registry.npmjs.org/forever/-/forever-0.15.1.tgz
+39 verbose request using bearer token for auth
+40 http fetch 200 https://registry.npmjs.org/forever/-/forever-0.15.1.tgz
+41 silly fetchAndShaCheck shasum 5e4e3d4ef946bef88ddcb9cc7412e478ad19e04e
+42 verbose addTmpTarball /tmp/npm-2443-f7f70e31/registry.npmjs.org/forever/-/forever-0.15.1.tgz not in flight; adding
+43 verbose addTmpTarball already have metadata; skipping unpack for forever@0.15.1
+44 silly cache afterAdd forever@0.15.1
+45 verbose afterAdd /root/.npm/forever/0.15.1/package/package.json not in flight; writing
+46 verbose afterAdd /root/.npm/forever/0.15.1/package/package.json written
+47 silly install resolved [ { name: 'forever',
+47 silly install resolved     preferGlobal: 'true',
+47 silly install resolved     description: 'A simple CLI tool for ensuring that a given node script runs continuously (i.e. forever)',
+47 silly install resolved     version: '0.15.1',
+47 silly install resolved     author: { name: 'Charlie Robbins', email: 'charlie.robbins@gmail.com' },
+47 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object], [Object] ],
+47 silly install resolved     repository: { type: 'git', url: 'http://github.com/nodejitsu/forever.git' },
+47 silly install resolved     keywords: [ 'cli', 'fault tolerant', 'sysadmin', 'tools' ],
+47 silly install resolved     dependencies:
+47 silly install resolved      { cliff: '~0.1.9',
+47 silly install resolved        clone: '^1.0.2',
+47 silly install resolved        colors: '~0.6.2',
+47 silly install resolved        flatiron: '~0.4.2',
+47 silly install resolved        'forever-monitor': '~1.6.0',
+47 silly install resolved        nconf: '~0.6.9',
+47 silly install resolved        nssocket: '~0.5.1',
+47 silly install resolved        'object-assign': '^3.0.0',
+47 silly install resolved        optimist: '~0.6.0',
+47 silly install resolved        'path-is-absolute': '~1.0.0',
+47 silly install resolved        prettyjson: '^1.1.2',
+47 silly install resolved        shush: '^1.0.0',
+47 silly install resolved        timespan: '~2.3.0',
+47 silly install resolved        utile: '~0.2.1',
+47 silly install resolved        winston: '~0.8.1' },
+47 silly install resolved     devDependencies:
+47 silly install resolved      { broadway: '~0.3.6',
+47 silly install resolved        eventemitter2: '0.4.x',
+47 silly install resolved        request: '2.x.x',
+47 silly install resolved        vows: '0.7.x' },
+47 silly install resolved     bin: { forever: './bin/forever' },
+47 silly install resolved     main: './lib/forever',
+47 silly install resolved     scripts: { test: 'vows test/**/*-test.js --spec -i' },
+47 silly install resolved     engines: { node: '>= 0.8.x' },
+47 silly install resolved     license: 'MIT',
+47 silly install resolved     gitHead: '6c157fafe909eb555b9e73028338377b05d51f51',
+47 silly install resolved     bugs: { url: 'https://github.com/nodejitsu/forever/issues' },
+47 silly install resolved     homepage: 'https://github.com/nodejitsu/forever',
+47 silly install resolved     _id: 'forever@0.15.1',
+47 silly install resolved     _shasum: '5e4e3d4ef946bef88ddcb9cc7412e478ad19e04e',
+47 silly install resolved     _from: 'forever@*',
+47 silly install resolved     _npmVersion: '2.6.1',
+47 silly install resolved     _nodeVersion: '0.10.40',
+47 silly install resolved     _npmUser: { name: 'indexzero', email: 'charlie.robbins@gmail.com' },
+47 silly install resolved     dist:
+47 silly install resolved      { shasum: '5e4e3d4ef946bef88ddcb9cc7412e478ad19e04e',
+47 silly install resolved        tarball: 'https://registry.npmjs.org/forever/-/forever-0.15.1.tgz' },
+47 silly install resolved     directories: {},
+47 silly install resolved     _resolved: 'https://registry.npmjs.org/forever/-/forever-0.15.1.tgz' } ]
+48 info install forever@0.15.1 into /usr/local/lib
+49 info installOne forever@0.15.1
+50 verbose installOne of forever to /usr/local/lib not in flight; installing
+51 verbose lock using /root/.npm/_locks/forever-ae9c3f2b6cc23ec5.lock for /usr/local/lib/node_modules/forever
+52 silly install write writing forever 0.15.1 to /usr/local/lib/node_modules/forever
+53 verbose unbuild lib/node_modules/forever
+54 silly gentlyRm /usr/local/lib/node_modules/forever is being purged from base /usr/local
+55 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/forever
+56 verbose tar unpack /root/.npm/forever/0.15.1/package.tgz
+57 verbose tar unpacking to /usr/local/lib/node_modules/forever
+58 silly gentlyRm /usr/local/lib/node_modules/forever is being purged
+59 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/forever
+60 silly gunzTarPerm modes [ '755', '644' ]
+61 silly gunzTarPerm extractEntry package.json
+62 silly gunzTarPerm extractEntry .npmignore
+63 silly gunzTarPerm extractEntry README.md
+64 silly gunzTarPerm extractEntry LICENSE
+65 silly gunzTarPerm extractEntry .travis.yml
+66 silly gunzTarPerm extractEntry CHANGELOG.md
+67 silly gunzTarPerm extractEntry .editorconfig
+68 silly gunzTarPerm extractEntry bin/forever
+69 silly gunzTarPerm extractEntry bin/monitor
+70 silly gunzTarPerm extractEntry lib/forever.js
+71 silly gunzTarPerm extractEntry lib/forever/cli.js
+72 silly gunzTarPerm extractEntry lib/forever/worker.js
+73 silly gunzTarPerm extractEntry .jshintrc
+74 silly gunzTarPerm extractEntry test/cli-test
+75 silly gunzTarPerm extractEntry test/core/daemonic-inheritance-test.js
+76 silly gunzTarPerm extractEntry test/core/start-stop-json-array-test.js
+77 silly gunzTarPerm extractEntry test/core/start-stop-json-obj-test.js
+78 silly gunzTarPerm extractEntry test/core/start-stop-relative-test.js
+79 silly gunzTarPerm extractEntry test/core/stopall-peaceful-test.js
+80 silly gunzTarPerm extractEntry test/core/stopbypid-peaceful-test.js
+81 silly gunzTarPerm extractEntry test/core/tail-stopall-test.js
+82 silly gunzTarPerm extractEntry test/fixtures/cluster-fork-mode.js
+83 silly gunzTarPerm extractEntry test/fixtures/server.js
+84 silly gunzTarPerm extractEntry test/fixtures/start-daemon.js
+85 silly gunzTarPerm extractEntry test/fixtures/log-on-interval.js
+86 silly gunzTarPerm extractEntry test/fixtures/servers.json
+87 silly gunzTarPerm extractEntry test/fixtures/server.json
+88 silly gunzTarPerm extractEntry test/helpers/index.js
+89 silly gunzTarPerm extractEntry test/helpers/macros.js
+90 silly gunzTarPerm extractEntry test/helpers/mocks/child-process.js
+91 silly gunzTarPerm extractEntry test/helpers/mocks/monitor.js
+92 silly gunzTarPerm extractEntry test/helpers/mocks/stream.js
+93 silly gunzTarPerm extractEntry test/worker/multiple-workers-test.js
+94 silly gunzTarPerm extractEntry test/worker/simple-test.js
+95 verbose write writing to /usr/local/lib/node_modules/forever/package.json
+96 info preinstall forever@0.15.1
+97 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/forever/package.json
+98 silly prepareForInstallMany adding cliff@~0.1.9 from forever dependencies
+99 silly prepareForInstallMany adding clone@^1.0.2 from forever dependencies
+100 silly prepareForInstallMany adding colors@~0.6.2 from forever dependencies
+101 silly prepareForInstallMany adding flatiron@~0.4.2 from forever dependencies
+102 silly prepareForInstallMany adding forever-monitor@~1.6.0 from forever dependencies
+103 silly prepareForInstallMany adding nconf@~0.6.9 from forever dependencies
+104 silly prepareForInstallMany adding nssocket@~0.5.1 from forever dependencies
+105 silly prepareForInstallMany adding object-assign@^3.0.0 from forever dependencies
+106 silly prepareForInstallMany adding optimist@~0.6.0 from forever dependencies
+107 silly prepareForInstallMany adding path-is-absolute@~1.0.0 from forever dependencies
+108 silly prepareForInstallMany adding prettyjson@^1.1.2 from forever dependencies
+109 silly prepareForInstallMany adding shush@^1.0.0 from forever dependencies
+110 silly prepareForInstallMany adding timespan@~2.3.0 from forever dependencies
+111 silly prepareForInstallMany adding utile@~0.2.1 from forever dependencies
+112 silly prepareForInstallMany adding winston@~0.8.1 from forever dependencies
+113 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/forever/package.json
+114 silly cache add args [ 'timespan@~2.3.0', null ]
+115 verbose cache add spec timespan@~2.3.0
+116 silly cache add parsed spec { raw: 'timespan@~2.3.0',
+116 silly cache add   scope: null,
+116 silly cache add   name: 'timespan',
+116 silly cache add   rawSpec: '~2.3.0',
+116 silly cache add   spec: '>=2.3.0 <2.4.0',
+116 silly cache add   type: 'range' }
+117 silly addNamed timespan@>=2.3.0 <2.4.0
+118 verbose addNamed ">=2.3.0 <2.4.0" is a valid semver range for timespan
+119 silly addNameRange { name: 'timespan', range: '>=2.3.0 <2.4.0', hasData: false }
+120 silly mapToRegistry name timespan
+121 silly mapToRegistry using default registry
+122 silly mapToRegistry registry https://registry.npmjs.org/
+123 silly mapToRegistry uri https://registry.npmjs.org/timespan
+124 verbose addNameRange registry:https://registry.npmjs.org/timespan not in flight; fetching
+125 silly cache add args [ 'utile@~0.2.1', null ]
+126 verbose cache add spec utile@~0.2.1
+127 silly cache add parsed spec { raw: 'utile@~0.2.1',
+127 silly cache add   scope: null,
+127 silly cache add   name: 'utile',
+127 silly cache add   rawSpec: '~0.2.1',
+127 silly cache add   spec: '>=0.2.1 <0.3.0',
+127 silly cache add   type: 'range' }
+128 silly addNamed utile@>=0.2.1 <0.3.0
+129 verbose addNamed ">=0.2.1 <0.3.0" is a valid semver range for utile
+130 silly addNameRange { name: 'utile', range: '>=0.2.1 <0.3.0', hasData: false }
+131 silly mapToRegistry name utile
+132 silly mapToRegistry using default registry
+133 silly mapToRegistry registry https://registry.npmjs.org/
+134 silly mapToRegistry uri https://registry.npmjs.org/utile
+135 verbose addNameRange registry:https://registry.npmjs.org/utile not in flight; fetching
+136 silly cache add args [ 'winston@~0.8.1', null ]
+137 verbose cache add spec winston@~0.8.1
+138 silly cache add parsed spec { raw: 'winston@~0.8.1',
+138 silly cache add   scope: null,
+138 silly cache add   name: 'winston',
+138 silly cache add   rawSpec: '~0.8.1',
+138 silly cache add   spec: '>=0.8.1 <0.9.0',
+138 silly cache add   type: 'range' }
+139 silly addNamed winston@>=0.8.1 <0.9.0
+140 verbose addNamed ">=0.8.1 <0.9.0" is a valid semver range for winston
+141 silly addNameRange { name: 'winston', range: '>=0.8.1 <0.9.0', hasData: false }
+142 silly mapToRegistry name winston
+143 silly mapToRegistry using default registry
+144 silly mapToRegistry registry https://registry.npmjs.org/
+145 silly mapToRegistry uri https://registry.npmjs.org/winston
+146 verbose addNameRange registry:https://registry.npmjs.org/winston not in flight; fetching
+147 silly cache add args [ 'cliff@~0.1.9', null ]
+148 verbose cache add spec cliff@~0.1.9
+149 silly cache add parsed spec { raw: 'cliff@~0.1.9',
+149 silly cache add   scope: null,
+149 silly cache add   name: 'cliff',
+149 silly cache add   rawSpec: '~0.1.9',
+149 silly cache add   spec: '>=0.1.9 <0.2.0',
+149 silly cache add   type: 'range' }
+150 silly addNamed cliff@>=0.1.9 <0.2.0
+151 verbose addNamed ">=0.1.9 <0.2.0" is a valid semver range for cliff
+152 silly addNameRange { name: 'cliff', range: '>=0.1.9 <0.2.0', hasData: false }
+153 silly mapToRegistry name cliff
+154 silly mapToRegistry using default registry
+155 silly mapToRegistry registry https://registry.npmjs.org/
+156 silly mapToRegistry uri https://registry.npmjs.org/cliff
+157 verbose addNameRange registry:https://registry.npmjs.org/cliff not in flight; fetching
+158 silly cache add args [ 'clone@^1.0.2', null ]
+159 verbose cache add spec clone@^1.0.2
+160 silly cache add parsed spec { raw: 'clone@^1.0.2',
+160 silly cache add   scope: null,
+160 silly cache add   name: 'clone',
+160 silly cache add   rawSpec: '^1.0.2',
+160 silly cache add   spec: '>=1.0.2 <2.0.0',
+160 silly cache add   type: 'range' }
+161 silly addNamed clone@>=1.0.2 <2.0.0
+162 verbose addNamed ">=1.0.2 <2.0.0" is a valid semver range for clone
+163 silly addNameRange { name: 'clone', range: '>=1.0.2 <2.0.0', hasData: false }
+164 silly mapToRegistry name clone
+165 silly mapToRegistry using default registry
+166 silly mapToRegistry registry https://registry.npmjs.org/
+167 silly mapToRegistry uri https://registry.npmjs.org/clone
+168 verbose addNameRange registry:https://registry.npmjs.org/clone not in flight; fetching
+169 silly cache add args [ 'colors@~0.6.2', null ]
+170 verbose cache add spec colors@~0.6.2
+171 silly cache add parsed spec { raw: 'colors@~0.6.2',
+171 silly cache add   scope: null,
+171 silly cache add   name: 'colors',
+171 silly cache add   rawSpec: '~0.6.2',
+171 silly cache add   spec: '>=0.6.2 <0.7.0',
+171 silly cache add   type: 'range' }
+172 silly addNamed colors@>=0.6.2 <0.7.0
+173 verbose addNamed ">=0.6.2 <0.7.0" is a valid semver range for colors
+174 silly addNameRange { name: 'colors', range: '>=0.6.2 <0.7.0', hasData: false }
+175 silly mapToRegistry name colors
+176 silly mapToRegistry using default registry
+177 silly mapToRegistry registry https://registry.npmjs.org/
+178 silly mapToRegistry uri https://registry.npmjs.org/colors
+179 verbose addNameRange registry:https://registry.npmjs.org/colors not in flight; fetching
+180 silly cache add args [ 'flatiron@~0.4.2', null ]
+181 verbose cache add spec flatiron@~0.4.2
+182 silly cache add parsed spec { raw: 'flatiron@~0.4.2',
+182 silly cache add   scope: null,
+182 silly cache add   name: 'flatiron',
+182 silly cache add   rawSpec: '~0.4.2',
+182 silly cache add   spec: '>=0.4.2 <0.5.0',
+182 silly cache add   type: 'range' }
+183 silly addNamed flatiron@>=0.4.2 <0.5.0
+184 verbose addNamed ">=0.4.2 <0.5.0" is a valid semver range for flatiron
+185 silly addNameRange { name: 'flatiron', range: '>=0.4.2 <0.5.0', hasData: false }
+186 silly mapToRegistry name flatiron
+187 silly mapToRegistry using default registry
+188 silly mapToRegistry registry https://registry.npmjs.org/
+189 silly mapToRegistry uri https://registry.npmjs.org/flatiron
+190 verbose addNameRange registry:https://registry.npmjs.org/flatiron not in flight; fetching
+191 silly cache add args [ 'forever-monitor@~1.6.0', null ]
+192 verbose cache add spec forever-monitor@~1.6.0
+193 silly cache add parsed spec { raw: 'forever-monitor@~1.6.0',
+193 silly cache add   scope: null,
+193 silly cache add   name: 'forever-monitor',
+193 silly cache add   rawSpec: '~1.6.0',
+193 silly cache add   spec: '>=1.6.0 <1.7.0',
+193 silly cache add   type: 'range' }
+194 silly addNamed forever-monitor@>=1.6.0 <1.7.0
+195 verbose addNamed ">=1.6.0 <1.7.0" is a valid semver range for forever-monitor
+196 silly addNameRange { name: 'forever-monitor',
+196 silly addNameRange   range: '>=1.6.0 <1.7.0',
+196 silly addNameRange   hasData: false }
+197 silly mapToRegistry name forever-monitor
+198 silly mapToRegistry using default registry
+199 silly mapToRegistry registry https://registry.npmjs.org/
+200 silly mapToRegistry uri https://registry.npmjs.org/forever-monitor
+201 verbose addNameRange registry:https://registry.npmjs.org/forever-monitor not in flight; fetching
+202 silly cache add args [ 'nconf@~0.6.9', null ]
+203 verbose cache add spec nconf@~0.6.9
+204 silly cache add parsed spec { raw: 'nconf@~0.6.9',
+204 silly cache add   scope: null,
+204 silly cache add   name: 'nconf',
+204 silly cache add   rawSpec: '~0.6.9',
+204 silly cache add   spec: '>=0.6.9 <0.7.0',
+204 silly cache add   type: 'range' }
+205 silly addNamed nconf@>=0.6.9 <0.7.0
+206 verbose addNamed ">=0.6.9 <0.7.0" is a valid semver range for nconf
+207 silly addNameRange { name: 'nconf', range: '>=0.6.9 <0.7.0', hasData: false }
+208 silly mapToRegistry name nconf
+209 silly mapToRegistry using default registry
+210 silly mapToRegistry registry https://registry.npmjs.org/
+211 silly mapToRegistry uri https://registry.npmjs.org/nconf
+212 verbose addNameRange registry:https://registry.npmjs.org/nconf not in flight; fetching
+213 silly cache add args [ 'nssocket@~0.5.1', null ]
+214 verbose cache add spec nssocket@~0.5.1
+215 silly cache add parsed spec { raw: 'nssocket@~0.5.1',
+215 silly cache add   scope: null,
+215 silly cache add   name: 'nssocket',
+215 silly cache add   rawSpec: '~0.5.1',
+215 silly cache add   spec: '>=0.5.1 <0.6.0',
+215 silly cache add   type: 'range' }
+216 silly addNamed nssocket@>=0.5.1 <0.6.0
+217 verbose addNamed ">=0.5.1 <0.6.0" is a valid semver range for nssocket
+218 silly addNameRange { name: 'nssocket', range: '>=0.5.1 <0.6.0', hasData: false }
+219 silly mapToRegistry name nssocket
+220 silly mapToRegistry using default registry
+221 silly mapToRegistry registry https://registry.npmjs.org/
+222 silly mapToRegistry uri https://registry.npmjs.org/nssocket
+223 verbose addNameRange registry:https://registry.npmjs.org/nssocket not in flight; fetching
+224 silly cache add args [ 'object-assign@^3.0.0', null ]
+225 verbose cache add spec object-assign@^3.0.0
+226 silly cache add parsed spec { raw: 'object-assign@^3.0.0',
+226 silly cache add   scope: null,
+226 silly cache add   name: 'object-assign',
+226 silly cache add   rawSpec: '^3.0.0',
+226 silly cache add   spec: '>=3.0.0 <4.0.0',
+226 silly cache add   type: 'range' }
+227 silly addNamed object-assign@>=3.0.0 <4.0.0
+228 verbose addNamed ">=3.0.0 <4.0.0" is a valid semver range for object-assign
+229 silly addNameRange { name: 'object-assign',
+229 silly addNameRange   range: '>=3.0.0 <4.0.0',
+229 silly addNameRange   hasData: false }
+230 silly mapToRegistry name object-assign
+231 silly mapToRegistry using default registry
+232 silly mapToRegistry registry https://registry.npmjs.org/
+233 silly mapToRegistry uri https://registry.npmjs.org/object-assign
+234 verbose addNameRange registry:https://registry.npmjs.org/object-assign not in flight; fetching
+235 silly cache add args [ 'optimist@~0.6.0', null ]
+236 verbose cache add spec optimist@~0.6.0
+237 silly cache add parsed spec { raw: 'optimist@~0.6.0',
+237 silly cache add   scope: null,
+237 silly cache add   name: 'optimist',
+237 silly cache add   rawSpec: '~0.6.0',
+237 silly cache add   spec: '>=0.6.0 <0.7.0',
+237 silly cache add   type: 'range' }
+238 silly addNamed optimist@>=0.6.0 <0.7.0
+239 verbose addNamed ">=0.6.0 <0.7.0" is a valid semver range for optimist
+240 silly addNameRange { name: 'optimist', range: '>=0.6.0 <0.7.0', hasData: false }
+241 silly mapToRegistry name optimist
+242 silly mapToRegistry using default registry
+243 silly mapToRegistry registry https://registry.npmjs.org/
+244 silly mapToRegistry uri https://registry.npmjs.org/optimist
+245 verbose addNameRange registry:https://registry.npmjs.org/optimist not in flight; fetching
+246 silly cache add args [ 'path-is-absolute@~1.0.0', null ]
+247 verbose cache add spec path-is-absolute@~1.0.0
+248 silly cache add parsed spec { raw: 'path-is-absolute@~1.0.0',
+248 silly cache add   scope: null,
+248 silly cache add   name: 'path-is-absolute',
+248 silly cache add   rawSpec: '~1.0.0',
+248 silly cache add   spec: '>=1.0.0 <1.1.0',
+248 silly cache add   type: 'range' }
+249 silly addNamed path-is-absolute@>=1.0.0 <1.1.0
+250 verbose addNamed ">=1.0.0 <1.1.0" is a valid semver range for path-is-absolute
+251 silly addNameRange { name: 'path-is-absolute',
+251 silly addNameRange   range: '>=1.0.0 <1.1.0',
+251 silly addNameRange   hasData: false }
+252 silly mapToRegistry name path-is-absolute
+253 silly mapToRegistry using default registry
+254 silly mapToRegistry registry https://registry.npmjs.org/
+255 silly mapToRegistry uri https://registry.npmjs.org/path-is-absolute
+256 verbose addNameRange registry:https://registry.npmjs.org/path-is-absolute not in flight; fetching
+257 silly cache add args [ 'prettyjson@^1.1.2', null ]
+258 verbose cache add spec prettyjson@^1.1.2
+259 silly cache add parsed spec { raw: 'prettyjson@^1.1.2',
+259 silly cache add   scope: null,
+259 silly cache add   name: 'prettyjson',
+259 silly cache add   rawSpec: '^1.1.2',
+259 silly cache add   spec: '>=1.1.2 <2.0.0',
+259 silly cache add   type: 'range' }
+260 silly addNamed prettyjson@>=1.1.2 <2.0.0
+261 verbose addNamed ">=1.1.2 <2.0.0" is a valid semver range for prettyjson
+262 silly addNameRange { name: 'prettyjson', range: '>=1.1.2 <2.0.0', hasData: false }
+263 silly mapToRegistry name prettyjson
+264 silly mapToRegistry using default registry
+265 silly mapToRegistry registry https://registry.npmjs.org/
+266 silly mapToRegistry uri https://registry.npmjs.org/prettyjson
+267 verbose addNameRange registry:https://registry.npmjs.org/prettyjson not in flight; fetching
+268 silly cache add args [ 'shush@^1.0.0', null ]
+269 verbose cache add spec shush@^1.0.0
+270 silly cache add parsed spec { raw: 'shush@^1.0.0',
+270 silly cache add   scope: null,
+270 silly cache add   name: 'shush',
+270 silly cache add   rawSpec: '^1.0.0',
+270 silly cache add   spec: '>=1.0.0 <2.0.0',
+270 silly cache add   type: 'range' }
+271 silly addNamed shush@>=1.0.0 <2.0.0
+272 verbose addNamed ">=1.0.0 <2.0.0" is a valid semver range for shush
+273 silly addNameRange { name: 'shush', range: '>=1.0.0 <2.0.0', hasData: false }
+274 silly mapToRegistry name shush
+275 silly mapToRegistry using default registry
+276 silly mapToRegistry registry https://registry.npmjs.org/
+277 silly mapToRegistry uri https://registry.npmjs.org/shush
+278 verbose addNameRange registry:https://registry.npmjs.org/shush not in flight; fetching
+279 verbose request uri https://registry.npmjs.org/timespan
+280 verbose request no auth needed
+281 info attempt registry request try #1 at 14:37:22
+282 verbose request using bearer token for auth
+283 http request GET https://registry.npmjs.org/timespan
+284 verbose request uri https://registry.npmjs.org/utile
+285 verbose request no auth needed
+286 info attempt registry request try #1 at 14:37:23
+287 verbose request using bearer token for auth
+288 http request GET https://registry.npmjs.org/utile
+289 verbose request uri https://registry.npmjs.org/winston
+290 verbose request no auth needed
+291 info attempt registry request try #1 at 14:37:23
+292 verbose request using bearer token for auth
+293 http request GET https://registry.npmjs.org/winston
+294 verbose request uri https://registry.npmjs.org/cliff
+295 verbose request no auth needed
+296 info attempt registry request try #1 at 14:37:23
+297 verbose request using bearer token for auth
+298 http request GET https://registry.npmjs.org/cliff
+299 verbose request uri https://registry.npmjs.org/clone
+300 verbose request no auth needed
+301 info attempt registry request try #1 at 14:37:23
+302 verbose request using bearer token for auth
+303 http request GET https://registry.npmjs.org/clone
+304 verbose request uri https://registry.npmjs.org/colors
+305 verbose request no auth needed
+306 info attempt registry request try #1 at 14:37:23
+307 verbose request using bearer token for auth
+308 http request GET https://registry.npmjs.org/colors
+309 verbose request uri https://registry.npmjs.org/flatiron
+310 verbose request no auth needed
+311 info attempt registry request try #1 at 14:37:23
+312 verbose request using bearer token for auth
+313 http request GET https://registry.npmjs.org/flatiron
+314 verbose request uri https://registry.npmjs.org/forever-monitor
+315 verbose request no auth needed
+316 info attempt registry request try #1 at 14:37:23
+317 verbose request using bearer token for auth
+318 http request GET https://registry.npmjs.org/forever-monitor
+319 verbose request uri https://registry.npmjs.org/nconf
+320 verbose request no auth needed
+321 info attempt registry request try #1 at 14:37:23
+322 verbose request using bearer token for auth
+323 http request GET https://registry.npmjs.org/nconf
+324 verbose request uri https://registry.npmjs.org/nssocket
+325 verbose request no auth needed
+326 info attempt registry request try #1 at 14:37:23
+327 verbose request using bearer token for auth
+328 http request GET https://registry.npmjs.org/nssocket
+329 verbose request uri https://registry.npmjs.org/object-assign
+330 verbose request no auth needed
+331 info attempt registry request try #1 at 14:37:23
+332 verbose request using bearer token for auth
+333 http request GET https://registry.npmjs.org/object-assign
+334 verbose request uri https://registry.npmjs.org/optimist
+335 verbose request no auth needed
+336 info attempt registry request try #1 at 14:37:23
+337 verbose request using bearer token for auth
+338 http request GET https://registry.npmjs.org/optimist
+339 verbose request uri https://registry.npmjs.org/path-is-absolute
+340 verbose request no auth needed
+341 info attempt registry request try #1 at 14:37:23
+342 verbose request using bearer token for auth
+343 http request GET https://registry.npmjs.org/path-is-absolute
+344 verbose request uri https://registry.npmjs.org/prettyjson
+345 verbose request no auth needed
+346 info attempt registry request try #1 at 14:37:23
+347 verbose request using bearer token for auth
+348 http request GET https://registry.npmjs.org/prettyjson
+349 verbose request uri https://registry.npmjs.org/shush
+350 verbose request no auth needed
+351 info attempt registry request try #1 at 14:37:23
+352 verbose request using bearer token for auth
+353 http request GET https://registry.npmjs.org/shush
+354 http 200 https://registry.npmjs.org/nssocket
+355 silly get cb [ 200,
+355 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+355 silly get     etag: '"6WXB2X8VQQJS0FGN5HDBQP1W3"',
+355 silly get     'content-type': 'application/json',
+355 silly get     'cache-control': 'max-age=300',
+355 silly get     'content-length': '29768',
+355 silly get     'accept-ranges': 'bytes',
+355 silly get     date: 'Wed, 11 May 2016 17:37:25 GMT',
+355 silly get     via: '1.1 varnish',
+355 silly get     connection: 'keep-alive',
+355 silly get     'x-served-by': 'cache-atl6227-ATL',
+355 silly get     'x-cache': 'MISS',
+355 silly get     'x-cache-hits': '0',
+355 silly get     'x-timer': 'S1462988245.680484,VS0,VE59',
+355 silly get     vary: 'Accept-Encoding' } ]
+356 verbose get saving nssocket to /root/.npm/registry.npmjs.org/nssocket/.cache.json
+357 http 200 https://registry.npmjs.org/nconf
+358 silly get cb [ 200,
+358 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+358 silly get     etag: '"BN2WOHNN10D0HG3QEEBTDXY2W"',
+358 silly get     'content-type': 'application/json',
+358 silly get     'cache-control': 'max-age=300',
+358 silly get     'content-length': '43348',
+358 silly get     'accept-ranges': 'bytes',
+358 silly get     date: 'Wed, 11 May 2016 17:37:25 GMT',
+358 silly get     via: '1.1 varnish',
+358 silly get     connection: 'keep-alive',
+358 silly get     'x-served-by': 'cache-atl6221-ATL',
+358 silly get     'x-cache': 'MISS',
+358 silly get     'x-cache-hits': '0',
+358 silly get     'x-timer': 'S1462988245.660745,VS0,VE83',
+358 silly get     vary: 'Accept-Encoding' } ]
+359 verbose get saving nconf to /root/.npm/registry.npmjs.org/nconf/.cache.json
+360 http 200 https://registry.npmjs.org/object-assign
+361 silly get cb [ 200,
+361 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+361 silly get     etag: '"306VXDXQ7C0F3IQRIK18GIP6D"',
+361 silly get     'content-type': 'application/json',
+361 silly get     'cache-control': 'max-age=300',
+361 silly get     'content-length': '21682',
+361 silly get     'accept-ranges': 'bytes',
+361 silly get     date: 'Wed, 11 May 2016 17:37:25 GMT',
+361 silly get     via: '1.1 varnish',
+361 silly get     connection: 'keep-alive',
+361 silly get     'x-served-by': 'cache-atl6249-ATL',
+361 silly get     'x-cache': 'MISS',
+361 silly get     'x-cache-hits': '0',
+361 silly get     'x-timer': 'S1462988245.699503,VS0,VE64',
+361 silly get     vary: 'Accept-Encoding' } ]
+362 verbose get saving object-assign to /root/.npm/registry.npmjs.org/object-assign/.cache.json
+363 http 200 https://registry.npmjs.org/path-is-absolute
+364 silly get cb [ 200,
+364 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+364 silly get     etag: '"BN5VZYARJTFIZINEV94ZMOHSE"',
+364 silly get     'content-type': 'application/json',
+364 silly get     'cache-control': 'max-age=300',
+364 silly get     'content-length': '3205',
+364 silly get     'accept-ranges': 'bytes',
+364 silly get     date: 'Wed, 11 May 2016 17:37:25 GMT',
+364 silly get     via: '1.1 varnish',
+364 silly get     connection: 'keep-alive',
+364 silly get     'x-served-by': 'cache-atl6251-ATL',
+364 silly get     'x-cache': 'MISS',
+364 silly get     'x-cache-hits': '0',
+364 silly get     'x-timer': 'S1462988245.963198,VS0,VE36',
+364 silly get     vary: 'Accept-Encoding' } ]
+365 verbose get saving path-is-absolute to /root/.npm/registry.npmjs.org/path-is-absolute/.cache.json
+366 http 200 https://registry.npmjs.org/cliff
+367 silly get cb [ 200,
+367 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+367 silly get     etag: '"BCEWZ7DDWYYPVDKAPFDDMAEKY"',
+367 silly get     'content-type': 'application/json',
+367 silly get     'cache-control': 'max-age=300',
+367 silly get     'content-length': '17678',
+367 silly get     'accept-ranges': 'bytes',
+367 silly get     date: 'Wed, 11 May 2016 17:37:27 GMT',
+367 silly get     via: '1.1 varnish',
+367 silly get     connection: 'keep-alive',
+367 silly get     'x-served-by': 'cache-atl6234-ATL',
+367 silly get     'x-cache': 'MISS',
+367 silly get     'x-cache-hits': '0',
+367 silly get     'x-timer': 'S1462988247.212454,VS0,VE58',
+367 silly get     vary: 'Accept-Encoding' } ]
+368 verbose get saving cliff to /root/.npm/registry.npmjs.org/cliff/.cache.json
+369 http 200 https://registry.npmjs.org/colors
+370 silly get cb [ 200,
+370 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+370 silly get     etag: '"EUXBGCWZ58HH4EL2K8H510EMX"',
+370 silly get     'content-type': 'application/json',
+370 silly get     'content-encoding': 'gzip',
+370 silly get     'cache-control': 'max-age=300',
+370 silly get     'transfer-encoding': 'chunked',
+370 silly get     'accept-ranges': 'bytes',
+370 silly get     date: 'Wed, 11 May 2016 17:37:25 GMT',
+370 silly get     via: '1.1 varnish',
+370 silly get     connection: 'keep-alive',
+370 silly get     'x-served-by': 'cache-atl6250-ATL',
+370 silly get     'x-cache': 'MISS',
+370 silly get     'x-cache-hits': '0',
+370 silly get     'x-timer': 'S1462988245.601887,VS0,VE105',
+370 silly get     vary: 'Accept-Encoding' } ]
+371 verbose get saving colors to /root/.npm/registry.npmjs.org/colors/.cache.json
+372 http 200 https://registry.npmjs.org/forever-monitor
+373 silly get cb [ 200,
+373 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+373 silly get     etag: '"ATC5YERAJURF5XXOZYZ4R3P77"',
+373 silly get     'content-type': 'application/json',
+373 silly get     'content-encoding': 'gzip',
+373 silly get     'cache-control': 'max-age=300',
+373 silly get     'transfer-encoding': 'chunked',
+373 silly get     'accept-ranges': 'bytes',
+373 silly get     date: 'Wed, 11 May 2016 17:37:25 GMT',
+373 silly get     via: '1.1 varnish',
+373 silly get     connection: 'keep-alive',
+373 silly get     'x-served-by': 'cache-atl6231-ATL',
+373 silly get     'x-cache': 'MISS',
+373 silly get     'x-cache-hits': '0',
+373 silly get     'x-timer': 'S1462988245.652506,VS0,VE117',
+373 silly get     vary: 'Accept-Encoding' } ]
+374 verbose get saving forever-monitor to /root/.npm/registry.npmjs.org/forever-monitor/.cache.json
+375 http 200 https://registry.npmjs.org/utile
+376 silly get cb [ 200,
+376 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+376 silly get     etag: '"602ZF12U0W13D8KMFYQ9W9SM3"',
+376 silly get     'content-type': 'application/json',
+376 silly get     'content-encoding': 'gzip',
+376 silly get     'cache-control': 'max-age=300',
+376 silly get     'transfer-encoding': 'chunked',
+376 silly get     'accept-ranges': 'bytes',
+376 silly get     date: 'Wed, 11 May 2016 17:37:25 GMT',
+376 silly get     via: '1.1 varnish',
+376 silly get     connection: 'keep-alive',
+376 silly get     'x-served-by': 'cache-atl6231-ATL',
+376 silly get     'x-cache': 'MISS',
+376 silly get     'x-cache-hits': '0',
+376 silly get     'x-timer': 'S1462988245.892591,VS0,VE106',
+376 silly get     vary: 'Accept-Encoding' } ]
+377 verbose get saving utile to /root/.npm/registry.npmjs.org/utile/.cache.json
+378 http 200 https://registry.npmjs.org/shush
+379 silly get cb [ 200,
+379 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+379 silly get     etag: '"M3O6DVOKK7EUYPXSTNGGTNQB"',
+379 silly get     'content-type': 'application/json',
+379 silly get     'cache-control': 'max-age=300',
+379 silly get     'content-length': '3240',
+379 silly get     'accept-ranges': 'bytes',
+379 silly get     date: 'Wed, 11 May 2016 17:37:27 GMT',
+379 silly get     via: '1.1 varnish',
+379 silly get     connection: 'keep-alive',
+379 silly get     'x-served-by': 'cache-atl6221-ATL',
+379 silly get     'x-cache': 'MISS',
+379 silly get     'x-cache-hits': '0',
+379 silly get     'x-timer': 'S1462988247.866505,VS0,VE34',
+379 silly get     vary: 'Accept-Encoding' } ]
+380 verbose get saving shush to /root/.npm/registry.npmjs.org/shush/.cache.json
+381 http 200 https://registry.npmjs.org/timespan
+382 silly get cb [ 200,
+382 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+382 silly get     etag: '"4CXNHOGON1P7A60NH50X50LN4"',
+382 silly get     'content-type': 'application/json',
+382 silly get     'cache-control': 'max-age=300',
+382 silly get     'content-length': '11094',
+382 silly get     'accept-ranges': 'bytes',
+382 silly get     date: 'Wed, 11 May 2016 17:37:28 GMT',
+382 silly get     via: '1.1 varnish',
+382 silly get     connection: 'keep-alive',
+382 silly get     'x-served-by': 'cache-atl6246-ATL',
+382 silly get     'x-cache': 'MISS',
+382 silly get     'x-cache-hits': '0',
+382 silly get     'x-timer': 'S1462988247.979931,VS0,VE37',
+382 silly get     vary: 'Accept-Encoding' } ]
+383 verbose get saving timespan to /root/.npm/registry.npmjs.org/timespan/.cache.json
+384 http 200 https://registry.npmjs.org/optimist
+385 silly get cb [ 200,
+385 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+385 silly get     etag: '"B58SZPVP75706RYDZUQL099VL"',
+385 silly get     'content-type': 'application/json',
+385 silly get     'content-encoding': 'gzip',
+385 silly get     'cache-control': 'max-age=300',
+385 silly get     'transfer-encoding': 'chunked',
+385 silly get     'accept-ranges': 'bytes',
+385 silly get     date: 'Wed, 11 May 2016 17:37:26 GMT',
+385 silly get     via: '1.1 varnish',
+385 silly get     connection: 'keep-alive',
+385 silly get     'x-served-by': 'cache-atl6247-ATL',
+385 silly get     'x-cache': 'MISS',
+385 silly get     'x-cache-hits': '0',
+385 silly get     'x-timer': 'S1462988245.943639,VS0,VE115',
+385 silly get     vary: 'Accept-Encoding' } ]
+386 verbose get saving optimist to /root/.npm/registry.npmjs.org/optimist/.cache.json
+387 http 200 https://registry.npmjs.org/prettyjson
+388 silly get cb [ 200,
+388 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+388 silly get     etag: '"D8HM7N5I3QO2JAXU2HP51GM3S"',
+388 silly get     'content-type': 'application/json',
+388 silly get     'content-encoding': 'gzip',
+388 silly get     'cache-control': 'max-age=300',
+388 silly get     'transfer-encoding': 'chunked',
+388 silly get     'accept-ranges': 'bytes',
+388 silly get     date: 'Wed, 11 May 2016 17:37:26 GMT',
+388 silly get     via: '1.1 varnish',
+388 silly get     connection: 'keep-alive',
+388 silly get     'x-served-by': 'cache-atl6247-ATL',
+388 silly get     'x-cache': 'MISS',
+388 silly get     'x-cache-hits': '0',
+388 silly get     'x-timer': 'S1462988245.981998,VS0,VE110',
+388 silly get     vary: 'Accept-Encoding' } ]
+389 verbose get saving prettyjson to /root/.npm/registry.npmjs.org/prettyjson/.cache.json
+390 http 200 https://registry.npmjs.org/flatiron
+391 silly get cb [ 200,
+391 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+391 silly get     etag: '"88HTAVS1U0XK6GH5GF76IJXOR"',
+391 silly get     'content-type': 'application/json',
+391 silly get     'content-encoding': 'gzip',
+391 silly get     'cache-control': 'max-age=300',
+391 silly get     'transfer-encoding': 'chunked',
+391 silly get     'accept-ranges': 'bytes',
+391 silly get     date: 'Wed, 11 May 2016 17:37:25 GMT',
+391 silly get     via: '1.1 varnish',
+391 silly get     connection: 'keep-alive',
+391 silly get     'x-served-by': 'cache-atl6231-ATL',
+391 silly get     'x-cache': 'MISS',
+391 silly get     'x-cache-hits': '0',
+391 silly get     'x-timer': 'S1462988245.620498,VS0,VE110',
+391 silly get     vary: 'Accept-Encoding' } ]
+392 verbose get saving flatiron to /root/.npm/registry.npmjs.org/flatiron/.cache.json
+393 http 200 https://registry.npmjs.org/clone
+394 silly get cb [ 200,
+394 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+394 silly get     etag: '"3YWDSWZWJJPH5DEZLBU3P08SI"',
+394 silly get     'content-type': 'application/json',
+394 silly get     'content-encoding': 'gzip',
+394 silly get     'cache-control': 'max-age=300',
+394 silly get     'transfer-encoding': 'chunked',
+394 silly get     'accept-ranges': 'bytes',
+394 silly get     date: 'Wed, 11 May 2016 17:37:26 GMT',
+394 silly get     via: '1.1 varnish',
+394 silly get     connection: 'keep-alive',
+394 silly get     'x-served-by': 'cache-atl6247-ATL',
+394 silly get     'x-cache': 'MISS',
+394 silly get     'x-cache-hits': '0',
+394 silly get     'x-timer': 'S1462988246.000765,VS0,VE404',
+394 silly get     vary: 'Accept-Encoding' } ]
+395 verbose get saving clone to /root/.npm/registry.npmjs.org/clone/.cache.json
+396 silly addNameRange number 2 { name: 'nssocket', range: '>=0.5.1 <0.6.0', hasData: true }
+397 silly addNameRange versions [ 'nssocket',
+397 silly addNameRange   [ '0.1.0',
+397 silly addNameRange     '0.1.1',
+397 silly addNameRange     '0.2.0',
+397 silly addNameRange     '0.2.1',
+397 silly addNameRange     '0.2.2',
+397 silly addNameRange     '0.2.3',
+397 silly addNameRange     '0.2.4',
+397 silly addNameRange     '0.2.5',
+397 silly addNameRange     '0.2.5-1',
+397 silly addNameRange     '0.3.0',
+397 silly addNameRange     '0.3.1',
+397 silly addNameRange     '0.3.2',
+397 silly addNameRange     '0.3.3',
+397 silly addNameRange     '0.3.4',
+397 silly addNameRange     '0.3.5',
+397 silly addNameRange     '0.3.6',
+397 silly addNameRange     '0.3.7',
+397 silly addNameRange     '0.3.8',
+397 silly addNameRange     '0.4.0',
+397 silly addNameRange     '0.5.0',
+397 silly addNameRange     '0.5.1',
+397 silly addNameRange     '0.5.2',
+397 silly addNameRange     '0.5.3',
+397 silly addNameRange     '0.6.0' ] ]
+398 silly addNamed nssocket@0.5.3
+399 verbose addNamed "0.5.3" is a plain semver version for nssocket
+400 silly addNameRange number 2 { name: 'nconf', range: '>=0.6.9 <0.7.0', hasData: true }
+401 silly addNameRange versions [ 'nconf',
+401 silly addNameRange   [ '0.1.14',
+401 silly addNameRange     '0.2.0',
+401 silly addNameRange     '0.3.1',
+401 silly addNameRange     '0.4.3',
+401 silly addNameRange     '0.4.4',
+401 silly addNameRange     '0.4.5',
+401 silly addNameRange     '0.4.6',
+401 silly addNameRange     '0.5.0',
+401 silly addNameRange     '0.5.1',
+401 silly addNameRange     '0.6.0',
+401 silly addNameRange     '0.6.1',
+401 silly addNameRange     '0.6.3',
+401 silly addNameRange     '0.6.4',
+401 silly addNameRange     '0.6.5',
+401 silly addNameRange     '0.6.6',
+401 silly addNameRange     '0.6.7',
+401 silly addNameRange     '0.6.8',
+401 silly addNameRange     '0.6.9',
+401 silly addNameRange     '0.7.0',
+401 silly addNameRange     '0.7.1',
+401 silly addNameRange     '0.7.2',
+401 silly addNameRange     '0.8.0',
+401 silly addNameRange     '0.8.1',
+401 silly addNameRange     '0.8.2',
+401 silly addNameRange     '0.8.3',
+401 silly addNameRange     '0.8.4' ] ]
+402 silly addNamed nconf@0.6.9
+403 verbose addNamed "0.6.9" is a plain semver version for nconf
+404 silly addNameRange number 2 { name: 'object-assign', range: '>=3.0.0 <4.0.0', hasData: true }
+405 silly addNameRange versions [ 'object-assign',
+405 silly addNameRange   [ '0.1.0',
+405 silly addNameRange     '0.1.1',
+405 silly addNameRange     '0.1.2',
+405 silly addNameRange     '0.2.0',
+405 silly addNameRange     '0.2.1',
+405 silly addNameRange     '0.2.2',
+405 silly addNameRange     '0.3.0',
+405 silly addNameRange     '0.3.1',
+405 silly addNameRange     '0.4.0',
+405 silly addNameRange     '1.0.0',
+405 silly addNameRange     '2.0.0',
+405 silly addNameRange     '3.0.0',
+405 silly addNameRange     '2.1.1',
+405 silly addNameRange     '4.0.0',
+405 silly addNameRange     '4.0.1',
+405 silly addNameRange     '4.1.0' ] ]
+406 silly addNamed object-assign@3.0.0
+407 verbose addNamed "3.0.0" is a plain semver version for object-assign
+408 http 200 https://registry.npmjs.org/winston
+409 silly get cb [ 200,
+409 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+409 silly get     etag: '"5MEXEI5X92A30SHRWUKBISB14"',
+409 silly get     'content-type': 'application/json',
+409 silly get     'content-encoding': 'gzip',
+409 silly get     'cache-control': 'max-age=300',
+409 silly get     'transfer-encoding': 'chunked',
+409 silly get     'accept-ranges': 'bytes',
+409 silly get     date: 'Wed, 11 May 2016 17:37:27 GMT',
+409 silly get     via: '1.1 varnish',
+409 silly get     connection: 'keep-alive',
+409 silly get     'x-served-by': 'cache-atl6229-ATL',
+409 silly get     'x-cache': 'MISS',
+409 silly get     'x-cache-hits': '0',
+409 silly get     'x-timer': 'S1462988247.230203,VS0,VE121',
+409 silly get     vary: 'Accept-Encoding' } ]
+410 verbose get saving winston to /root/.npm/registry.npmjs.org/winston/.cache.json
+411 silly mapToRegistry name nssocket
+412 silly mapToRegistry using default registry
+413 silly mapToRegistry registry https://registry.npmjs.org/
+414 silly mapToRegistry uri https://registry.npmjs.org/nssocket
+415 verbose addRemoteTarball https://registry.npmjs.org/nssocket/-/nssocket-0.5.3.tgz not in flight; adding
+416 verbose addRemoteTarball [ 'https://registry.npmjs.org/nssocket/-/nssocket-0.5.3.tgz',
+416 verbose addRemoteTarball   '883ca2ec605f5ed64a4d5190b2625401928f8f8d' ]
+417 silly mapToRegistry name nconf
+418 silly mapToRegistry using default registry
+419 silly mapToRegistry registry https://registry.npmjs.org/
+420 silly mapToRegistry uri https://registry.npmjs.org/nconf
+421 verbose addRemoteTarball https://registry.npmjs.org/nconf/-/nconf-0.6.9.tgz not in flight; adding
+422 verbose addRemoteTarball [ 'https://registry.npmjs.org/nconf/-/nconf-0.6.9.tgz',
+422 verbose addRemoteTarball   '9570ef15ed6f9ae6b2b3c8d5e71b66d3193cd661' ]
+423 silly mapToRegistry name object-assign
+424 silly mapToRegistry using default registry
+425 silly mapToRegistry registry https://registry.npmjs.org/
+426 silly mapToRegistry uri https://registry.npmjs.org/object-assign
+427 verbose addRemoteTarball https://registry.npmjs.org/object-assign/-/object-assign-3.0.0.tgz not in flight; adding
+428 verbose addRemoteTarball [ 'https://registry.npmjs.org/object-assign/-/object-assign-3.0.0.tgz',
+428 verbose addRemoteTarball   '9bedd5ca0897949bca47e7ff408062d549f587f2' ]
+429 silly addNameRange number 2 { name: 'path-is-absolute',
+429 silly addNameRange   range: '>=1.0.0 <1.1.0',
+429 silly addNameRange   hasData: true }
+430 silly addNameRange versions [ 'path-is-absolute', [ '1.0.0' ] ]
+431 silly addNamed path-is-absolute@1.0.0
+432 verbose addNamed "1.0.0" is a plain semver version for path-is-absolute
+433 silly mapToRegistry name path-is-absolute
+434 silly mapToRegistry using default registry
+435 silly mapToRegistry registry https://registry.npmjs.org/
+436 silly mapToRegistry uri https://registry.npmjs.org/path-is-absolute
+437 verbose addRemoteTarball https://registry.npmjs.org/path-is-absolute/-/path-is-absolute-1.0.0.tgz not in flight; adding
+438 verbose addRemoteTarball [ 'https://registry.npmjs.org/path-is-absolute/-/path-is-absolute-1.0.0.tgz',
+438 verbose addRemoteTarball   '263dada66ab3f2fb10bf7f9d24dd8f3e570ef912' ]
+439 silly addNameRange number 2 { name: 'cliff', range: '>=0.1.9 <0.2.0', hasData: true }
+440 silly addNameRange versions [ 'cliff',
+440 silly addNameRange   [ '0.1.0',
+440 silly addNameRange     '0.1.1',
+440 silly addNameRange     '0.1.2',
+440 silly addNameRange     '0.1.3',
+440 silly addNameRange     '0.1.4',
+440 silly addNameRange     '0.1.5',
+440 silly addNameRange     '0.1.6',
+440 silly addNameRange     '0.1.7',
+440 silly addNameRange     '0.1.8',
+440 silly addNameRange     '0.1.9',
+440 silly addNameRange     '0.1.10' ] ]
+441 silly addNamed cliff@0.1.10
+442 verbose addNamed "0.1.10" is a plain semver version for cliff
+443 silly addNameRange number 2 { name: 'colors', range: '>=0.6.2 <0.7.0', hasData: true }
+444 silly addNameRange versions [ 'colors',
+444 silly addNameRange   [ '0.3.0',
+444 silly addNameRange     '0.5.0',
+444 silly addNameRange     '0.5.1',
+444 silly addNameRange     '0.6.0',
+444 silly addNameRange     '0.6.0-1',
+444 silly addNameRange     '0.6.1',
+444 silly addNameRange     '0.6.2',
+444 silly addNameRange     '1.0.0',
+444 silly addNameRange     '1.0.1',
+444 silly addNameRange     '1.0.2',
+444 silly addNameRange     '1.0.3',
+444 silly addNameRange     '1.1.0',
+444 silly addNameRange     '1.1.1',
+444 silly addNameRange     '1.1.2' ] ]
+445 silly addNamed colors@0.6.2
+446 verbose addNamed "0.6.2" is a plain semver version for colors
+447 silly addNameRange number 2 { name: 'forever-monitor',
+447 silly addNameRange   range: '>=1.6.0 <1.7.0',
+447 silly addNameRange   hasData: true }
+448 silly addNameRange versions [ 'forever-monitor',
+448 silly addNameRange   [ '1.0.0',
+448 silly addNameRange     '1.0.1',
+448 silly addNameRange     '1.0.2',
+448 silly addNameRange     '1.1.0',
+448 silly addNameRange     '1.2.0',
+448 silly addNameRange     '1.2.1',
+448 silly addNameRange     '1.2.2',
+448 silly addNameRange     '1.2.3',
+448 silly addNameRange     '1.2.4',
+448 silly addNameRange     '1.3.0',
+448 silly addNameRange     '1.4.0',
+448 silly addNameRange     '1.5.0',
+448 silly addNameRange     '1.5.1',
+448 silly addNameRange     '1.5.2',
+448 silly addNameRange     '1.6.0',
+448 silly addNameRange     '1.7.0' ] ]
+449 silly addNamed forever-monitor@1.6.0
+450 verbose addNamed "1.6.0" is a plain semver version for forever-monitor
+451 silly mapToRegistry name cliff
+452 silly mapToRegistry using default registry
+453 silly mapToRegistry registry https://registry.npmjs.org/
+454 silly mapToRegistry uri https://registry.npmjs.org/cliff
+455 verbose addRemoteTarball https://registry.npmjs.org/cliff/-/cliff-0.1.10.tgz not in flight; adding
+456 verbose addRemoteTarball [ 'https://registry.npmjs.org/cliff/-/cliff-0.1.10.tgz',
+456 verbose addRemoteTarball   '53be33ea9f59bec85609ee300ac4207603e52013' ]
+457 silly mapToRegistry name colors
+458 silly mapToRegistry using default registry
+459 silly mapToRegistry registry https://registry.npmjs.org/
+460 silly mapToRegistry uri https://registry.npmjs.org/colors
+461 verbose addRemoteTarball https://registry.npmjs.org/colors/-/colors-0.6.2.tgz not in flight; adding
+462 verbose addRemoteTarball [ 'https://registry.npmjs.org/colors/-/colors-0.6.2.tgz',
+462 verbose addRemoteTarball   '2423fe6678ac0c5dae8852e5d0e5be08c997abcc' ]
+463 info retry fetch attempt 1 at 14:37:31
+464 info attempt registry request try #1 at 14:37:31
+465 http fetch GET https://registry.npmjs.org/nssocket/-/nssocket-0.5.3.tgz
+466 verbose request using bearer token for auth
+467 info retry fetch attempt 1 at 14:37:31
+468 info attempt registry request try #1 at 14:37:31
+469 http fetch GET https://registry.npmjs.org/nconf/-/nconf-0.6.9.tgz
+470 verbose request using bearer token for auth
+471 info retry fetch attempt 1 at 14:37:31
+472 info attempt registry request try #1 at 14:37:31
+473 http fetch GET https://registry.npmjs.org/object-assign/-/object-assign-3.0.0.tgz
+474 verbose request using bearer token for auth
+475 silly mapToRegistry name forever-monitor
+476 silly mapToRegistry using default registry
+477 silly mapToRegistry registry https://registry.npmjs.org/
+478 silly mapToRegistry uri https://registry.npmjs.org/forever-monitor
+479 verbose addRemoteTarball https://registry.npmjs.org/forever-monitor/-/forever-monitor-1.6.0.tgz not in flight; adding
+480 verbose addRemoteTarball [ 'https://registry.npmjs.org/forever-monitor/-/forever-monitor-1.6.0.tgz',
+480 verbose addRemoteTarball   '3de1afd3e49f25712987281a252c02cb2463ad40' ]
+481 silly addNameRange number 2 { name: 'utile', range: '>=0.2.1 <0.3.0', hasData: true }
+482 silly addNameRange versions [ 'utile',
+482 silly addNameRange   [ '0.0.1',
+482 silly addNameRange     '0.0.2',
+482 silly addNameRange     '0.0.3',
+482 silly addNameRange     '0.0.4',
+482 silly addNameRange     '0.0.5',
+482 silly addNameRange     '0.0.6',
+482 silly addNameRange     '0.0.8',
+482 silly addNameRange     '0.0.9',
+482 silly addNameRange     '0.0.10',
+482 silly addNameRange     '0.1.0',
+482 silly addNameRange     '0.1.1',
+482 silly addNameRange     '0.1.2',
+482 silly addNameRange     '0.1.3',
+482 silly addNameRange     '0.1.5',
+482 silly addNameRange     '0.1.6',
+482 silly addNameRange     '0.1.7',
+482 silly addNameRange     '0.2.0',
+482 silly addNameRange     '0.2.1',
+482 silly addNameRange     '0.3.0' ] ]
+483 silly addNamed utile@0.2.1
+484 verbose addNamed "0.2.1" is a plain semver version for utile
+485 silly addNameRange number 2 { name: 'shush', range: '>=1.0.0 <2.0.0', hasData: true }
+486 silly addNameRange versions [ 'shush', [ '0.0.1', '1.0.0' ] ]
+487 silly addNamed shush@1.0.0
+488 verbose addNamed "1.0.0" is a plain semver version for shush
+489 silly addNameRange number 2 { name: 'timespan', range: '>=2.3.0 <2.4.0', hasData: true }
+490 silly addNameRange versions [ 'timespan', [ '2.0.0', '2.0.1', '2.1.0', '2.2.0', '2.3.0' ] ]
+491 silly addNamed timespan@2.3.0
+492 verbose addNamed "2.3.0" is a plain semver version for timespan
+493 info retry fetch attempt 1 at 14:37:31
+494 info attempt registry request try #1 at 14:37:31
+495 http fetch GET https://registry.npmjs.org/path-is-absolute/-/path-is-absolute-1.0.0.tgz
+496 verbose request using bearer token for auth
+497 silly mapToRegistry name utile
+498 silly mapToRegistry using default registry
+499 silly mapToRegistry registry https://registry.npmjs.org/
+500 silly mapToRegistry uri https://registry.npmjs.org/utile
+501 verbose addRemoteTarball https://registry.npmjs.org/utile/-/utile-0.2.1.tgz not in flight; adding
+502 verbose addRemoteTarball [ 'https://registry.npmjs.org/utile/-/utile-0.2.1.tgz',
+502 verbose addRemoteTarball   '930c88e99098d6220834c356cbd9a770522d90d7' ]
+503 silly addNameRange number 2 { name: 'optimist', range: '>=0.6.0 <0.7.0', hasData: true }
+504 silly addNameRange versions [ 'optimist',
+504 silly addNameRange   [ '0.0.1',
+504 silly addNameRange     '0.0.2',
+504 silly addNameRange     '0.0.4',
+504 silly addNameRange     '0.0.5',
+504 silly addNameRange     '0.0.6',
+504 silly addNameRange     '0.0.7',
+504 silly addNameRange     '0.1.0',
+504 silly addNameRange     '0.1.1',
+504 silly addNameRange     '0.1.2',
+504 silly addNameRange     '0.1.3',
+504 silly addNameRange     '0.1.4',
+504 silly addNameRange     '0.1.5',
+504 silly addNameRange     '0.1.6',
+504 silly addNameRange     '0.1.7',
+504 silly addNameRange     '0.1.8',
+504 silly addNameRange     '0.1.9',
+504 silly addNameRange     '0.0.3',
+504 silly addNameRange     '0.2.0',
+504 silly addNameRange     '0.2.1',
+504 silly addNameRange     '0.2.2',
+504 silly addNameRange     '0.2.3',
+504 silly addNameRange     '0.2.4',
+504 silly addNameRange     '0.2.5',
+504 silly addNameRange     '0.2.6',
+504 silly addNameRange     '0.2.7',
+504 silly addNameRange     '0.2.8',
+504 silly addNameRange     '0.3.0',
+504 silly addNameRange     '0.3.1',
+504 silly addNameRange     '0.3.3',
+504 silly addNameRange     '0.3.4',
+504 silly addNameRange     '0.3.5',
+504 silly addNameRange     '0.3.6',
+504 silly addNameRange     '0.3.7',
+504 silly addNameRange     '0.4.0',
+504 silly addNameRange     '0.5.0',
+504 silly addNameRange     '0.5.1',
+504 silly addNameRange     '0.5.2',
+504 silly addNameRange     '0.6.0',
+504 silly addNameRange     '0.6.1' ] ]
+505 silly addNamed optimist@0.6.1
+506 verbose addNamed "0.6.1" is a plain semver version for optimist
+507 silly addNameRange number 2 { name: 'prettyjson', range: '>=1.1.2 <2.0.0', hasData: true }
+508 silly addNameRange versions [ 'prettyjson',
+508 silly addNameRange   [ '0.0.1',
+508 silly addNameRange     '0.1.0',
+508 silly addNameRange     '0.1.1',
+508 silly addNameRange     '0.1.2',
+508 silly addNameRange     '0.1.3',
+508 silly addNameRange     '0.1.4',
+508 silly addNameRange     '0.2.0',
+508 silly addNameRange     '0.2.1',
+508 silly addNameRange     '0.3.0',
+508 silly addNameRange     '0.3.1',
+508 silly addNameRange     '0.4.0',
+508 silly addNameRange     '0.5.0',
+508 silly addNameRange     '0.6.0',
+508 silly addNameRange     '0.7.0',
+508 silly addNameRange     '0.7.1',
+508 silly addNameRange     '0.8.0',
+508 silly addNameRange     '0.8.1',
+508 silly addNameRange     '0.9.0',
+508 silly addNameRange     '0.10.0',
+508 silly addNameRange     '0.11.0',
+508 silly addNameRange     '0.11.1',
+508 silly addNameRange     '0.12.0',
+508 silly addNameRange     '0.12.1',
+508 silly addNameRange     '0.13.0',
+508 silly addNameRange     '1.0.0',
+508 silly addNameRange     '1.1.0',
+508 silly addNameRange     '1.1.1',
+508 silly addNameRange     '1.1.2',
+508 silly addNameRange     '1.1.3' ] ]
+509 silly addNamed prettyjson@1.1.3
+510 verbose addNamed "1.1.3" is a plain semver version for prettyjson
+511 silly mapToRegistry name shush
+512 silly mapToRegistry using default registry
+513 silly mapToRegistry registry https://registry.npmjs.org/
+514 silly mapToRegistry uri https://registry.npmjs.org/shush
+515 verbose addRemoteTarball https://registry.npmjs.org/shush/-/shush-1.0.0.tgz not in flight; adding
+516 verbose addRemoteTarball [ 'https://registry.npmjs.org/shush/-/shush-1.0.0.tgz',
+516 verbose addRemoteTarball   'c27415a9e458f2fed39b27cf8eb37c003782b431' ]
+517 silly mapToRegistry name timespan
+518 silly mapToRegistry using default registry
+519 silly mapToRegistry registry https://registry.npmjs.org/
+520 silly mapToRegistry uri https://registry.npmjs.org/timespan
+521 verbose addRemoteTarball https://registry.npmjs.org/timespan/-/timespan-2.3.0.tgz not in flight; adding
+522 verbose addRemoteTarball [ 'https://registry.npmjs.org/timespan/-/timespan-2.3.0.tgz',
+522 verbose addRemoteTarball   '4902ce040bd13d845c8f59b27e9d59bad6f39929' ]
+523 silly addNameRange number 2 { name: 'flatiron', range: '>=0.4.2 <0.5.0', hasData: true }
+524 silly addNameRange versions [ 'flatiron',
+524 silly addNameRange   [ '0.1.2',
+524 silly addNameRange     '0.1.3',
+524 silly addNameRange     '0.1.4',
+524 silly addNameRange     '0.1.5',
+524 silly addNameRange     '0.1.5-1',
+524 silly addNameRange     '0.1.6',
+524 silly addNameRange     '0.1.7',
+524 silly addNameRange     '0.1.7-1',
+524 silly addNameRange     '0.1.8',
+524 silly addNameRange     '0.1.9',
+524 silly addNameRange     '0.1.10',
+524 silly addNameRange     '0.1.11',
+524 silly addNameRange     '0.1.12',
+524 silly addNameRange     '0.1.12-1',
+524 silly addNameRange     '0.1.13',
+524 silly addNameRange     '0.1.14',
+524 silly addNameRange     '0.1.15',
+524 silly addNameRange     '0.1.16',
+524 silly addNameRange     '0.1.17',
+524 silly addNameRange     '0.2.0',
+524 silly addNameRange     '0.2.1',
+524 silly addNameRange     '0.2.2',
+524 silly addNameRange     '0.2.3',
+524 silly addNameRange     '0.2.4',
+524 silly addNameRange     '0.2.5',
+524 silly addNameRange     '0.2.6',
+524 silly addNameRange     '0.2.7',
+524 silly addNameRange     '0.2.8',
+524 silly addNameRange     '0.3.0',
+524 silly addNameRange     '0.3.2',
+524 silly addNameRange     '0.3.3',
+524 silly addNameRange     '0.3.4',
+524 silly addNameRange     '0.3.5',
+524 silly addNameRange     '0.3.6',
+524 silly addNameRange     '0.3.7',
+524 silly addNameRange     '0.3.8',
+524 silly addNameRange     '0.3.9',
+524 silly addNameRange     '0.3.10',
+524 silly addNameRange     '0.3.11',
+524 silly addNameRange     '0.4.0',
+524 silly addNameRange     '0.4.1',
+524 silly addNameRange     '0.4.2',
+524 silly addNameRange     '0.4.3' ] ]
+525 silly addNamed flatiron@0.4.3
+526 verbose addNamed "0.4.3" is a plain semver version for flatiron
+527 silly mapToRegistry name optimist
+528 silly mapToRegistry using default registry
+529 silly mapToRegistry registry https://registry.npmjs.org/
+530 silly mapToRegistry uri https://registry.npmjs.org/optimist
+531 verbose addRemoteTarball https://registry.npmjs.org/optimist/-/optimist-0.6.1.tgz not in flight; adding
+532 verbose addRemoteTarball [ 'https://registry.npmjs.org/optimist/-/optimist-0.6.1.tgz',
+532 verbose addRemoteTarball   'da3ea74686fa21a19a111c326e90eb15a0196686' ]
+533 silly mapToRegistry name prettyjson
+534 silly mapToRegistry using default registry
+535 silly mapToRegistry registry https://registry.npmjs.org/
+536 silly mapToRegistry uri https://registry.npmjs.org/prettyjson
+537 verbose addRemoteTarball https://registry.npmjs.org/prettyjson/-/prettyjson-1.1.3.tgz not in flight; adding
+538 verbose addRemoteTarball [ 'https://registry.npmjs.org/prettyjson/-/prettyjson-1.1.3.tgz',
+538 verbose addRemoteTarball   'd0787f732c9c3a566f4165fa4f1176fd67e6b263' ]
+539 silly addNameRange number 2 { name: 'clone', range: '>=1.0.2 <2.0.0', hasData: true }
+540 silly addNameRange versions [ 'clone',
+540 silly addNameRange   [ '0.0.0',
+540 silly addNameRange     '0.0.1',
+540 silly addNameRange     '0.0.2',
+540 silly addNameRange     '0.0.3',
+540 silly addNameRange     '0.0.4',
+540 silly addNameRange     '0.0.5',
+540 silly addNameRange     '0.0.6',
+540 silly addNameRange     '0.0.7',
+540 silly addNameRange     '0.1.0',
+540 silly addNameRange     '0.1.1',
+540 silly addNameRange     '0.1.2',
+540 silly addNameRange     '0.1.3',
+540 silly addNameRange     '0.1.4',
+540 silly addNameRange     '0.1.5',
+540 silly addNameRange     '0.1.6',
+540 silly addNameRange     '0.1.7',
+540 silly addNameRange     '0.1.8',
+540 silly addNameRange     '0.1.9',
+540 silly addNameRange     '0.1.10',
+540 silly addNameRange     '0.1.11',
+540 silly addNameRange     '0.1.12',
+540 silly addNameRange     '0.1.13',
+540 silly addNameRange     '0.1.14',
+540 silly addNameRange     '0.1.15',
+540 silly addNameRange     '0.1.16',
+540 silly addNameRange     '0.1.17',
+540 silly addNameRange     '0.1.18',
+540 silly addNameRange     '0.2.0',
+540 silly addNameRange     '0.1.19',
+540 silly addNameRange     '1.0.0',
+540 silly addNameRange     '1.0.1',
+540 silly addNameRange     '1.0.2' ] ]
+541 silly addNamed clone@1.0.2
+542 verbose addNamed "1.0.2" is a plain semver version for clone
+543 info retry fetch attempt 1 at 14:37:32
+544 info attempt registry request try #1 at 14:37:32
+545 http fetch GET https://registry.npmjs.org/cliff/-/cliff-0.1.10.tgz
+546 verbose request using bearer token for auth
+547 info retry fetch attempt 1 at 14:37:32
+548 info attempt registry request try #1 at 14:37:32
+549 http fetch GET https://registry.npmjs.org/colors/-/colors-0.6.2.tgz
+550 verbose request using bearer token for auth
+551 info retry fetch attempt 1 at 14:37:32
+552 info attempt registry request try #1 at 14:37:32
+553 http fetch GET https://registry.npmjs.org/forever-monitor/-/forever-monitor-1.6.0.tgz
+554 verbose request using bearer token for auth
+555 silly mapToRegistry name flatiron
+556 silly mapToRegistry using default registry
+557 silly mapToRegistry registry https://registry.npmjs.org/
+558 silly mapToRegistry uri https://registry.npmjs.org/flatiron
+559 verbose addRemoteTarball https://registry.npmjs.org/flatiron/-/flatiron-0.4.3.tgz not in flight; adding
+560 verbose addRemoteTarball [ 'https://registry.npmjs.org/flatiron/-/flatiron-0.4.3.tgz',
+560 verbose addRemoteTarball   '248cf79a3da7d7dc379e2a11c92a2719cbb540f6' ]
+561 silly mapToRegistry name clone
+562 silly mapToRegistry using default registry
+563 silly mapToRegistry registry https://registry.npmjs.org/
+564 silly mapToRegistry uri https://registry.npmjs.org/clone
+565 verbose addRemoteTarball https://registry.npmjs.org/clone/-/clone-1.0.2.tgz not in flight; adding
+566 verbose addRemoteTarball [ 'https://registry.npmjs.org/clone/-/clone-1.0.2.tgz',
+566 verbose addRemoteTarball   '260b7a99ebb1edfe247538175f783243cb19d149' ]
+567 info retry fetch attempt 1 at 14:37:32
+568 info attempt registry request try #1 at 14:37:32
+569 http fetch GET https://registry.npmjs.org/utile/-/utile-0.2.1.tgz
+570 verbose request using bearer token for auth
+571 info retry fetch attempt 1 at 14:37:32
+572 info attempt registry request try #1 at 14:37:32
+573 http fetch GET https://registry.npmjs.org/shush/-/shush-1.0.0.tgz
+574 verbose request using bearer token for auth
+575 info retry fetch attempt 1 at 14:37:32
+576 info attempt registry request try #1 at 14:37:32
+577 http fetch GET https://registry.npmjs.org/timespan/-/timespan-2.3.0.tgz
+578 verbose request using bearer token for auth
+579 info retry fetch attempt 1 at 14:37:32
+580 info attempt registry request try #1 at 14:37:32
+581 http fetch GET https://registry.npmjs.org/optimist/-/optimist-0.6.1.tgz
+582 verbose request using bearer token for auth
+583 info retry fetch attempt 1 at 14:37:32
+584 info attempt registry request try #1 at 14:37:32
+585 http fetch GET https://registry.npmjs.org/prettyjson/-/prettyjson-1.1.3.tgz
+586 verbose request using bearer token for auth
+587 silly addNameRange number 2 { name: 'winston', range: '>=0.8.1 <0.9.0', hasData: true }
+588 silly addNameRange versions [ 'winston',
+588 silly addNameRange   [ '0.2.11',
+588 silly addNameRange     '0.3.3',
+588 silly addNameRange     '0.3.4',
+588 silly addNameRange     '0.3.5',
+588 silly addNameRange     '0.4.0',
+588 silly addNameRange     '0.4.1',
+588 silly addNameRange     '0.5.0',
+588 silly addNameRange     '0.5.1',
+588 silly addNameRange     '0.5.2',
+588 silly addNameRange     '0.5.3',
+588 silly addNameRange     '0.5.4',
+588 silly addNameRange     '0.5.5',
+588 silly addNameRange     '0.5.6',
+588 silly addNameRange     '0.5.7',
+588 silly addNameRange     '0.5.8',
+588 silly addNameRange     '0.5.9',
+588 silly addNameRange     '0.5.10',
+588 silly addNameRange     '0.5.11',
+588 silly addNameRange     '0.6.1',
+588 silly addNameRange     '0.6.2',
+588 silly addNameRange     '0.7.0',
+588 silly addNameRange     '0.7.1',
+588 silly addNameRange     '0.7.2',
+588 silly addNameRange     '0.7.3',
+588 silly addNameRange     '0.8.0',
+588 silly addNameRange     '0.8.1',
+588 silly addNameRange     '0.8.2',
+588 silly addNameRange     '0.8.3',
+588 silly addNameRange     '0.9.0',
+588 silly addNameRange     '1.0.0',
+588 silly addNameRange     '1.0.1',
+588 silly addNameRange     '1.0.2',
+588 silly addNameRange     '1.1.0',
+588 silly addNameRange     '1.1.1',
+588 silly addNameRange     '1.1.2',
+588 silly addNameRange     '2.0.0',
+588 silly addNameRange     '2.0.1',
+588 silly addNameRange     '2.1.0',
+588 silly addNameRange     '2.1.1',
+588 silly addNameRange     '2.2.0' ] ]
+589 silly addNamed winston@0.8.3
+590 verbose addNamed "0.8.3" is a plain semver version for winston
+591 info retry fetch attempt 1 at 14:37:33
+592 info attempt registry request try #1 at 14:37:33
+593 http fetch GET https://registry.npmjs.org/flatiron/-/flatiron-0.4.3.tgz
+594 verbose request using bearer token for auth
+595 info retry fetch attempt 1 at 14:37:33
+596 info attempt registry request try #1 at 14:37:33
+597 http fetch GET https://registry.npmjs.org/clone/-/clone-1.0.2.tgz
+598 verbose request using bearer token for auth
+599 silly mapToRegistry name winston
+600 silly mapToRegistry using default registry
+601 silly mapToRegistry registry https://registry.npmjs.org/
+602 silly mapToRegistry uri https://registry.npmjs.org/winston
+603 verbose addRemoteTarball https://registry.npmjs.org/winston/-/winston-0.8.3.tgz not in flight; adding
+604 verbose addRemoteTarball [ 'https://registry.npmjs.org/winston/-/winston-0.8.3.tgz',
+604 verbose addRemoteTarball   '64b6abf4cd01adcaefd5009393b1d8e8bec19db0' ]
+605 info retry fetch attempt 1 at 14:37:33
+606 info attempt registry request try #1 at 14:37:33
+607 http fetch GET https://registry.npmjs.org/winston/-/winston-0.8.3.tgz
+608 verbose request using bearer token for auth
+609 http fetch 200 https://registry.npmjs.org/nssocket/-/nssocket-0.5.3.tgz
+610 http fetch 200 https://registry.npmjs.org/path-is-absolute/-/path-is-absolute-1.0.0.tgz
+611 http fetch 200 https://registry.npmjs.org/nconf/-/nconf-0.6.9.tgz
+612 http fetch 200 https://registry.npmjs.org/colors/-/colors-0.6.2.tgz
+613 http fetch 200 https://registry.npmjs.org/forever-monitor/-/forever-monitor-1.6.0.tgz
+614 http fetch 200 https://registry.npmjs.org/cliff/-/cliff-0.1.10.tgz
+615 http fetch 200 https://registry.npmjs.org/utile/-/utile-0.2.1.tgz
+616 http fetch 200 https://registry.npmjs.org/timespan/-/timespan-2.3.0.tgz
+617 http fetch 200 https://registry.npmjs.org/optimist/-/optimist-0.6.1.tgz
+618 http fetch 200 https://registry.npmjs.org/prettyjson/-/prettyjson-1.1.3.tgz
+619 silly fetchAndShaCheck shasum 263dada66ab3f2fb10bf7f9d24dd8f3e570ef912
+620 http fetch 200 https://registry.npmjs.org/clone/-/clone-1.0.2.tgz
+621 http fetch 200 https://registry.npmjs.org/object-assign/-/object-assign-3.0.0.tgz
+622 http fetch 200 https://registry.npmjs.org/flatiron/-/flatiron-0.4.3.tgz
+623 verbose addTmpTarball /tmp/npm-2443-f7f70e31/registry.npmjs.org/path-is-absolute/-/path-is-absolute-1.0.0.tgz not in flight; adding
+624 verbose addTmpTarball already have metadata; skipping unpack for path-is-absolute@1.0.0
+625 silly fetchAndShaCheck shasum 2423fe6678ac0c5dae8852e5d0e5be08c997abcc
+626 silly fetchAndShaCheck shasum 9bedd5ca0897949bca47e7ff408062d549f587f2
+627 verbose addTmpTarball /tmp/npm-2443-f7f70e31/registry.npmjs.org/colors/-/colors-0.6.2.tgz not in flight; adding
+628 verbose addTmpTarball already have metadata; skipping unpack for colors@0.6.2
+629 verbose addTmpTarball /tmp/npm-2443-f7f70e31/registry.npmjs.org/object-assign/-/object-assign-3.0.0.tgz not in flight; adding
+630 verbose addTmpTarball already have metadata; skipping unpack for object-assign@3.0.0
+631 http fetch 200 https://registry.npmjs.org/shush/-/shush-1.0.0.tgz
+632 http fetch 200 https://registry.npmjs.org/winston/-/winston-0.8.3.tgz
+633 silly fetchAndShaCheck shasum 883ca2ec605f5ed64a4d5190b2625401928f8f8d
+634 silly cache afterAdd path-is-absolute@1.0.0
+635 verbose afterAdd /root/.npm/path-is-absolute/1.0.0/package/package.json not in flight; writing
+636 verbose addTmpTarball /tmp/npm-2443-f7f70e31/registry.npmjs.org/nssocket/-/nssocket-0.5.3.tgz not in flight; adding
+637 verbose addTmpTarball already have metadata; skipping unpack for nssocket@0.5.3
+638 silly fetchAndShaCheck shasum da3ea74686fa21a19a111c326e90eb15a0196686
+639 silly fetchAndShaCheck shasum c27415a9e458f2fed39b27cf8eb37c003782b431
+640 silly fetchAndShaCheck shasum 3de1afd3e49f25712987281a252c02cb2463ad40
+641 silly fetchAndShaCheck shasum 260b7a99ebb1edfe247538175f783243cb19d149
+642 verbose afterAdd /root/.npm/path-is-absolute/1.0.0/package/package.json written
+643 silly cache afterAdd colors@0.6.2
+644 verbose afterAdd /root/.npm/colors/0.6.2/package/package.json not in flight; writing
+645 silly cache afterAdd object-assign@3.0.0
+646 verbose afterAdd /root/.npm/object-assign/3.0.0/package/package.json not in flight; writing
+647 verbose addTmpTarball /tmp/npm-2443-f7f70e31/registry.npmjs.org/optimist/-/optimist-0.6.1.tgz not in flight; adding
+648 verbose addTmpTarball already have metadata; skipping unpack for optimist@0.6.1
+649 verbose addTmpTarball /tmp/npm-2443-f7f70e31/registry.npmjs.org/shush/-/shush-1.0.0.tgz not in flight; adding
+650 verbose addTmpTarball already have metadata; skipping unpack for shush@1.0.0
+651 verbose addTmpTarball /tmp/npm-2443-f7f70e31/registry.npmjs.org/forever-monitor/-/forever-monitor-1.6.0.tgz not in flight; adding
+652 verbose addTmpTarball already have metadata; skipping unpack for forever-monitor@1.6.0
+653 silly fetchAndShaCheck shasum 248cf79a3da7d7dc379e2a11c92a2719cbb540f6
+654 verbose addTmpTarball /tmp/npm-2443-f7f70e31/registry.npmjs.org/clone/-/clone-1.0.2.tgz not in flight; adding
+655 verbose addTmpTarball already have metadata; skipping unpack for clone@1.0.2
+656 verbose afterAdd /root/.npm/colors/0.6.2/package/package.json written
+657 verbose afterAdd /root/.npm/object-assign/3.0.0/package/package.json written
+658 verbose addTmpTarball /tmp/npm-2443-f7f70e31/registry.npmjs.org/flatiron/-/flatiron-0.4.3.tgz not in flight; adding
+659 verbose addTmpTarball already have metadata; skipping unpack for flatiron@0.4.3
+660 silly cache afterAdd nssocket@0.5.3
+661 verbose afterAdd /root/.npm/nssocket/0.5.3/package/package.json not in flight; writing
+662 silly fetchAndShaCheck shasum 930c88e99098d6220834c356cbd9a770522d90d7
+663 silly fetchAndShaCheck shasum 4902ce040bd13d845c8f59b27e9d59bad6f39929
+664 verbose addTmpTarball /tmp/npm-2443-f7f70e31/registry.npmjs.org/utile/-/utile-0.2.1.tgz not in flight; adding
+665 verbose addTmpTarball already have metadata; skipping unpack for utile@0.2.1
+666 verbose addTmpTarball /tmp/npm-2443-f7f70e31/registry.npmjs.org/timespan/-/timespan-2.3.0.tgz not in flight; adding
+667 verbose addTmpTarball already have metadata; skipping unpack for timespan@2.3.0
+668 silly cache afterAdd optimist@0.6.1
+669 verbose afterAdd /root/.npm/optimist/0.6.1/package/package.json not in flight; writing
+670 silly cache afterAdd shush@1.0.0
+671 verbose afterAdd /root/.npm/shush/1.0.0/package/package.json not in flight; writing
+672 verbose afterAdd /root/.npm/nssocket/0.5.3/package/package.json written
+673 silly cache afterAdd forever-monitor@1.6.0
+674 verbose afterAdd /root/.npm/forever-monitor/1.6.0/package/package.json not in flight; writing
+675 silly cache afterAdd clone@1.0.2
+676 verbose afterAdd /root/.npm/clone/1.0.2/package/package.json not in flight; writing
+677 silly cache afterAdd flatiron@0.4.3
+678 verbose afterAdd /root/.npm/flatiron/0.4.3/package/package.json not in flight; writing
+679 verbose afterAdd /root/.npm/optimist/0.6.1/package/package.json written
+680 verbose afterAdd /root/.npm/shush/1.0.0/package/package.json written
+681 verbose afterAdd /root/.npm/forever-monitor/1.6.0/package/package.json written
+682 verbose afterAdd /root/.npm/clone/1.0.2/package/package.json written
+683 silly cache afterAdd utile@0.2.1
+684 verbose afterAdd /root/.npm/utile/0.2.1/package/package.json not in flight; writing
+685 silly fetchAndShaCheck shasum 9570ef15ed6f9ae6b2b3c8d5e71b66d3193cd661
+686 silly cache afterAdd timespan@2.3.0
+687 verbose afterAdd /root/.npm/timespan/2.3.0/package/package.json not in flight; writing
+688 verbose afterAdd /root/.npm/flatiron/0.4.3/package/package.json written
+689 verbose addTmpTarball /tmp/npm-2443-f7f70e31/registry.npmjs.org/nconf/-/nconf-0.6.9.tgz not in flight; adding
+690 verbose addTmpTarball already have metadata; skipping unpack for nconf@0.6.9
+691 verbose afterAdd /root/.npm/utile/0.2.1/package/package.json written
+692 verbose afterAdd /root/.npm/timespan/2.3.0/package/package.json written
+693 silly cache afterAdd nconf@0.6.9
+694 verbose afterAdd /root/.npm/nconf/0.6.9/package/package.json not in flight; writing
+695 verbose afterAdd /root/.npm/nconf/0.6.9/package/package.json written
+696 silly fetchAndShaCheck shasum 64b6abf4cd01adcaefd5009393b1d8e8bec19db0
+697 verbose addTmpTarball /tmp/npm-2443-f7f70e31/registry.npmjs.org/winston/-/winston-0.8.3.tgz not in flight; adding
+698 verbose addTmpTarball already have metadata; skipping unpack for winston@0.8.3
+699 silly cache afterAdd winston@0.8.3
+700 verbose afterAdd /root/.npm/winston/0.8.3/package/package.json not in flight; writing
+701 verbose afterAdd /root/.npm/winston/0.8.3/package/package.json written
+702 silly fetchAndShaCheck shasum 53be33ea9f59bec85609ee300ac4207603e52013
+703 verbose addTmpTarball /tmp/npm-2443-f7f70e31/registry.npmjs.org/cliff/-/cliff-0.1.10.tgz not in flight; adding
+704 verbose addTmpTarball already have metadata; skipping unpack for cliff@0.1.10
+705 silly cache afterAdd cliff@0.1.10
+706 verbose afterAdd /root/.npm/cliff/0.1.10/package/package.json not in flight; writing
+707 verbose afterAdd /root/.npm/cliff/0.1.10/package/package.json written
+708 silly fetchAndShaCheck shasum d0787f732c9c3a566f4165fa4f1176fd67e6b263
+709 verbose addTmpTarball /tmp/npm-2443-f7f70e31/registry.npmjs.org/prettyjson/-/prettyjson-1.1.3.tgz not in flight; adding
+710 verbose addTmpTarball already have metadata; skipping unpack for prettyjson@1.1.3
+711 silly cache afterAdd prettyjson@1.1.3
+712 verbose afterAdd /root/.npm/prettyjson/1.1.3/package/package.json not in flight; writing
+713 verbose afterAdd /root/.npm/prettyjson/1.1.3/package/package.json written
+714 silly install resolved [ { name: 'path-is-absolute',
+714 silly install resolved     version: '1.0.0',
+714 silly install resolved     description: 'Node.js 0.12 path.isAbsolute() ponyfill',
+714 silly install resolved     license: 'MIT',
+714 silly install resolved     repository:
+714 silly install resolved      { type: 'git',
+714 silly install resolved        url: 'https://github.com/sindresorhus/path-is-absolute' },
+714 silly install resolved     author:
+714 silly install resolved      { name: 'Sindre Sorhus',
+714 silly install resolved        email: 'sindresorhus@gmail.com',
+714 silly install resolved        url: 'sindresorhus.com' },
+714 silly install resolved     engines: { node: '>=0.10.0' },
+714 silly install resolved     scripts: { test: 'node test.js' },
+714 silly install resolved     files: [ 'index.js' ],
+714 silly install resolved     keywords:
+714 silly install resolved      [ 'path',
+714 silly install resolved        'paths',
+714 silly install resolved        'file',
+714 silly install resolved        'dir',
+714 silly install resolved        'absolute',
+714 silly install resolved        'isabsolute',
+714 silly install resolved        'is-absolute',
+714 silly install resolved        'built-in',
+714 silly install resolved        'util',
+714 silly install resolved        'utils',
+714 silly install resolved        'core',
+714 silly install resolved        'ponyfill',
+714 silly install resolved        'polyfill',
+714 silly install resolved        'shim',
+714 silly install resolved        'is',
+714 silly install resolved        'detect',
+714 silly install resolved        'check' ],
+714 silly install resolved     gitHead: '7a76a0c9f2263192beedbe0a820e4d0baee5b7a1',
+714 silly install resolved     bugs: { url: 'https://github.com/sindresorhus/path-is-absolute/issues' },
+714 silly install resolved     homepage: 'https://github.com/sindresorhus/path-is-absolute',
+714 silly install resolved     _id: 'path-is-absolute@1.0.0',
+714 silly install resolved     _shasum: '263dada66ab3f2fb10bf7f9d24dd8f3e570ef912',
+714 silly install resolved     _from: 'path-is-absolute@>=1.0.0 <1.1.0',
+714 silly install resolved     _npmVersion: '2.5.1',
+714 silly install resolved     _nodeVersion: '0.12.0',
+714 silly install resolved     _npmUser: { name: 'sindresorhus', email: 'sindresorhus@gmail.com' },
+714 silly install resolved     maintainers: [ [Object] ],
+714 silly install resolved     dist:
+714 silly install resolved      { shasum: '263dada66ab3f2fb10bf7f9d24dd8f3e570ef912',
+714 silly install resolved        tarball: 'https://registry.npmjs.org/path-is-absolute/-/path-is-absolute-1.0.0.tgz' },
+714 silly install resolved     directories: {},
+714 silly install resolved     _resolved: 'https://registry.npmjs.org/path-is-absolute/-/path-is-absolute-1.0.0.tgz' },
+714 silly install resolved   { name: 'colors',
+714 silly install resolved     description: 'get colors in your node.js console like what',
+714 silly install resolved     version: '0.6.2',
+714 silly install resolved     author: { name: 'Marak Squires' },
+714 silly install resolved     homepage: 'https://github.com/Marak/colors.js',
+714 silly install resolved     bugs: { url: 'https://github.com/Marak/colors.js/issues' },
+714 silly install resolved     keywords: [ 'ansi', 'terminal', 'colors' ],
+714 silly install resolved     repository: { type: 'git', url: 'http://github.com/Marak/colors.js.git' },
+714 silly install resolved     engines: { node: '>=0.1.90' },
+714 silly install resolved     main: 'colors',
+714 silly install resolved     _id: 'colors@0.6.2',
+714 silly install resolved     dist:
+714 silly install resolved      { shasum: '2423fe6678ac0c5dae8852e5d0e5be08c997abcc',
+714 silly install resolved        tarball: 'https://registry.npmjs.org/colors/-/colors-0.6.2.tgz' },
+714 silly install resolved     _from: 'colors@>=0.6.2 <0.7.0',
+714 silly install resolved     _npmVersion: '1.2.30',
+714 silly install resolved     _npmUser: { name: 'marak', email: 'marak.squires@gmail.com' },
+714 silly install resolved     maintainers: [ [Object] ],
+714 silly install resolved     directories: {},
+714 silly install resolved     _shasum: '2423fe6678ac0c5dae8852e5d0e5be08c997abcc',
+714 silly install resolved     _resolved: 'https://registry.npmjs.org/colors/-/colors-0.6.2.tgz' },
+714 silly install resolved   { name: 'object-assign',
+714 silly install resolved     version: '3.0.0',
+714 silly install resolved     description: 'ES6 Object.assign() ponyfill',
+714 silly install resolved     license: 'MIT',
+714 silly install resolved     repository:
+714 silly install resolved      { type: 'git',
+714 silly install resolved        url: 'https://github.com/sindresorhus/object-assign' },
+714 silly install resolved     author:
+714 silly install resolved      { name: 'Sindre Sorhus',
+714 silly install resolved        email: 'sindresorhus@gmail.com',
+714 silly install resolved        url: 'http://sindresorhus.com' },
+714 silly install resolved     engines: { node: '>=0.10.0' },
+714 silly install resolved     scripts: { test: 'mocha' },
+714 silly install resolved     files: [ 'index.js' ],
+714 silly install resolved     keywords:
+714 silly install resolved      [ 'object',
+714 silly install resolved        'assign',
+714 silly install resolved        'extend',
+714 silly install resolved        'properties',
+714 silly install resolved        'es6',
+714 silly install resolved        'ecmascript',
+714 silly install resolved        'harmony',
+714 silly install resolved        'ponyfill',
+714 silly install resolved        'prollyfill',
+714 silly install resolved        'polyfill',
+714 silly install resolved        'shim',
+714 silly install resolved        'browser' ],
+714 silly install resolved     devDependencies: { mocha: '*' },
+714 silly install resolved     gitHead: '02622dcb0d82bd81a071ed0b04fedf5e5eea7059',
+714 silly install resolved     bugs: { url: 'https://github.com/sindresorhus/object-assign/issues' },
+714 silly install resolved     homepage: 'https://github.com/sindresorhus/object-assign',
+714 silly install resolved     _id: 'object-assign@3.0.0',
+714 silly install resolved     _shasum: '9bedd5ca0897949bca47e7ff408062d549f587f2',
+714 silly install resolved     _from: 'object-assign@>=3.0.0 <4.0.0',
+714 silly install resolved     _npmVersion: '2.10.1',
+714 silly install resolved     _nodeVersion: '0.12.4',
+714 silly install resolved     _npmUser: { name: 'sindresorhus', email: 'sindresorhus@gmail.com' },
+714 silly install resolved     dist:
+714 silly install resolved      { shasum: '9bedd5ca0897949bca47e7ff408062d549f587f2',
+714 silly install resolved        tarball: 'https://registry.npmjs.org/object-assign/-/object-assign-3.0.0.tgz' },
+714 silly install resolved     maintainers: [ [Object] ],
+714 silly install resolved     directories: {},
+714 silly install resolved     _resolved: 'https://registry.npmjs.org/object-assign/-/object-assign-3.0.0.tgz' },
+714 silly install resolved   { name: 'nssocket',
+714 silly install resolved     description: 'An elegant way to define lightweight protocols on-top of TCP/TLS sockets in node.js',
+714 silly install resolved     version: '0.5.3',
+714 silly install resolved     author: { name: 'Charlie Robbins', email: 'charlie.robbins@gmail.com' },
+714 silly install resolved     maintainers: [ [Object], [Object] ],
+714 silly install resolved     repository: { type: 'git', url: 'http://github.com/nodejitsu/nssocket.git' },
+714 silly install resolved     dependencies: { eventemitter2: '~0.4.14', lazy: '~1.0.11' },
+714 silly install resolved     devDependencies: { vows: '~0.8.1', msgpack: '~0.2.4' },
+714 silly install resolved     main: './lib/nssocket',
+714 silly install resolved     engines: { node: '>= 0.8.x' },
+714 silly install resolved     scripts: { test: 'vows test/*-test.js --spec' },
+714 silly install resolved     license: 'MIT',
+714 silly install resolved     gitHead: 'ab705cee33b2683bb9dd36533e7166e53f5b46b9',
+714 silly install resolved     bugs: { url: 'https://github.com/nodejitsu/nssocket/issues' },
+714 silly install resolved     homepage: 'https://github.com/nodejitsu/nssocket',
+714 silly install resolved     _id: 'nssocket@0.5.3',
+714 silly install resolved     _shasum: '883ca2ec605f5ed64a4d5190b2625401928f8f8d',
+714 silly install resolved     _from: 'nssocket@>=0.5.1 <0.6.0',
+714 silly install resolved     _npmVersion: '2.1.9',
+714 silly install resolved     _nodeVersion: '0.10.33',
+714 silly install resolved     _npmUser: { name: 'indexzero', email: 'charlie.robbins@gmail.com' },
+714 silly install resolved     dist:
+714 silly install resolved      { shasum: '883ca2ec605f5ed64a4d5190b2625401928f8f8d',
+714 silly install resolved        tarball: 'https://registry.npmjs.org/nssocket/-/nssocket-0.5.3.tgz' },
+714 silly install resolved     directories: {},
+714 silly install resolved     _resolved: 'https://registry.npmjs.org/nssocket/-/nssocket-0.5.3.tgz' },
+714 silly install resolved   { name: 'optimist',
+714 silly install resolved     version: '0.6.1',
+714 silly install resolved     description: 'Light-weight option parsing with an argv hash. No optstrings attached.',
+714 silly install resolved     main: './index.js',
+714 silly install resolved     dependencies: { wordwrap: '~0.0.2', minimist: '~0.0.1' },
+714 silly install resolved     devDependencies: { hashish: '~0.0.4', tap: '~0.4.0' },
+714 silly install resolved     scripts: { test: 'tap ./test/*.js' },
+714 silly install resolved     repository:
+714 silly install resolved      { type: 'git',
+714 silly install resolved        url: 'http://github.com/substack/node-optimist.git' },
+714 silly install resolved     keywords:
+714 silly install resolved      [ 'argument',
+714 silly install resolved        'args',
+714 silly install resolved        'option',
+714 silly install resolved        'parser',
+714 silly install resolved        'parsing',
+714 silly install resolved        'cli',
+714 silly install resolved        'command' ],
+714 silly install resolved     author:
+714 silly install resolved      { name: 'James Halliday',
+714 silly install resolved        email: 'mail@substack.net',
+714 silly install resolved        url: 'http://substack.net' },
+714 silly install resolved     license: 'MIT/X11',
+714 silly install resolved     engine: { node: '>=0.4' },
+714 silly install resolved     bugs: { url: 'https://github.com/substack/node-optimist/issues' },
+714 silly install resolved     homepage: 'https://github.com/substack/node-optimist',
+714 silly install resolved     _id: 'optimist@0.6.1',
+714 silly install resolved     dist:
+714 silly install resolved      { shasum: 'da3ea74686fa21a19a111c326e90eb15a0196686',
+714 silly install resolved        tarball: 'https://registry.npmjs.org/optimist/-/optimist-0.6.1.tgz' },
+714 silly install resolved     _from: 'optimist@>=0.6.0 <0.7.0',
+714 silly install resolved     _npmVersion: '1.3.21',
+714 silly install resolved     _npmUser: { name: 'substack', email: 'mail@substack.net' },
+714 silly install resolved     maintainers: [ [Object] ],
+714 silly install resolved     directories: {},
+714 silly install resolved     _shasum: 'da3ea74686fa21a19a111c326e90eb15a0196686',
+714 silly install resolved     _resolved: 'https://registry.npmjs.org/optimist/-/optimist-0.6.1.tgz' },
+714 silly install resolved   { name: 'shush',
+714 silly install resolved     version: '1.0.0',
+714 silly install resolved     description: 'Sugar for silencing JSON comments.',
+714 silly install resolved     main: 'index.js',
+714 silly install resolved     directories: { test: 'test' },
+714 silly install resolved     scripts:
+714 silly install resolved      { test: 'tape test/*.js',
+714 silly install resolved        cover: 'istanbul cover tape -- test/*.js' },
+714 silly install resolved     repository: { type: 'git', url: 'git://github.com/totherik/shush.git' },
+714 silly install resolved     author: { name: 'Erik Toth', email: 'totherik@gmail.com' },
+714 silly install resolved     license: 'MIT',
+714 silly install resolved     devDependencies: { tape: '~2.3.2', istanbul: '~0.2.1' },
+714 silly install resolved     dependencies: { 'strip-json-comments': '~0.1.1', caller: '~0.0.1' },
+714 silly install resolved     bugs: { url: 'https://github.com/totherik/shush/issues' },
+714 silly install resolved     homepage: 'https://github.com/totherik/shush',
+714 silly install resolved     gitHead: 'a6f3f35ad650ae744ed1aa1cb8be68f86bcba706',
+714 silly install resolved     _id: 'shush@1.0.0',
+714 silly install resolved     _shasum: 'c27415a9e458f2fed39b27cf8eb37c003782b431',
+714 silly install resolved     _from: 'shush@>=1.0.0 <2.0.0',
+714 silly install resolved     _npmVersion: '2.8.1',
+714 silly install resolved     _nodeVersion: '0.12.2',
+714 silly install resolved     _npmUser: { name: 'aredridel', email: 'aredridel@nbtsc.org' },
+714 silly install resolved     maintainers: [ [Object], [Object] ],
+714 silly install resolved     dist:
+714 silly install resolved      { shasum: 'c27415a9e458f2fed39b27cf8eb37c003782b431',
+714 silly install resolved        tarball: 'https://registry.npmjs.org/shush/-/shush-1.0.0.tgz' },
+714 silly install resolved     _resolved: 'https://registry.npmjs.org/shush/-/shush-1.0.0.tgz' },
+714 silly install resolved   { name: 'forever-monitor',
+714 silly install resolved     description: 'Core forever process monitor',
+714 silly install resolved     version: '1.6.0',
+714 silly install resolved     author: { name: 'Charlie Robbins', email: 'charlie.robbins@gmail.com' },
+714 silly install resolved     contributors: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+714 silly install resolved     repository:
+714 silly install resolved      { type: 'git',
+714 silly install resolved        url: 'http://github.com/nodejitsu/forever-monitor.git' },
+714 silly install resolved     keywords: [ 'fault tolerant', 'sysadmin', 'tools' ],
+714 silly install resolved     dependencies:
+714 silly install resolved      { broadway: '~0.3.6',
+714 silly install resolved        chokidar: '^1.0.1',
+714 silly install resolved        minimatch: '~2.0.0',
+714 silly install resolved        'ps-tree': '0.0.x',
+714 silly install resolved        utile: '~0.2.1' },
+714 silly install resolved     devDependencies: { optimist: '~0.6.1', vows: '~0.7.0' },
+714 silly install resolved     main: './lib/index.js',
+714 silly install resolved     scripts: { test: 'vows test/**/*-test.js --spec -i' },
+714 silly install resolved     license: 'MIT',
+714 silly install resolved     engines: { node: '>= 0.8.x' },
+714 silly install resolved     gitHead: '2c449c52b36be8804ccf4ee7fa6bcdfc2c34b7d0',
+714 silly install resolved     bugs: { url: 'https://github.com/nodejitsu/forever-monitor/issues' },
+714 silly install resolved     homepage: 'https://github.com/nodejitsu/forever-monitor',
+714 silly install resolved     _id: 'forever-monitor@1.6.0',
+714 silly install resolved     _shasum: '3de1afd3e49f25712987281a252c02cb2463ad40',
+714 silly install resolved     _from: 'forever-monitor@>=1.6.0 <1.7.0',
+714 silly install resolved     _npmVersion: '2.7.5',
+714 silly install resolved     _nodeVersion: '0.10.38',
+714 silly install resolved     _npmUser: { name: 'indexzero', email: 'charlie.robbins@gmail.com' },
+714 silly install resolved     maintainers: [ [Object], [Object] ],
+714 silly install resolved     dist:
+714 silly install resolved      { shasum: '3de1afd3e49f25712987281a252c02cb2463ad40',
+714 silly install resolved        tarball: 'https://registry.npmjs.org/forever-monitor/-/forever-monitor-1.6.0.tgz' },
+714 silly install resolved     directories: {},
+714 silly install resolved     _resolved: 'https://registry.npmjs.org/forever-monitor/-/forever-monitor-1.6.0.tgz' },
+714 silly install resolved   { name: 'clone',
+714 silly install resolved     description: 'deep cloning of objects and arrays',
+714 silly install resolved     tags: [ 'clone', 'object', 'array', 'function', 'date' ],
+714 silly install resolved     version: '1.0.2',
+714 silly install resolved     repository: { type: 'git', url: 'git://github.com/pvorb/node-clone.git' },
+714 silly install resolved     bugs: { url: 'https://github.com/pvorb/node-clone/issues' },
+714 silly install resolved     main: 'clone.js',
+714 silly install resolved     author:
+714 silly install resolved      { name: 'Paul Vorbach',
+714 silly install resolved        email: 'paul@vorba.ch',
+714 silly install resolved        url: 'http://paul.vorba.ch/' },
+714 silly install resolved     contributors:
+714 silly install resolved      [ [Object],
+714 silly install resolved        [Object],
+714 silly install resolved        [Object],
+714 silly install resolved        [Object],
+714 silly install resolved        [Object],
+714 silly install resolved        [Object],
+714 silly install resolved        [Object],
+714 silly install resolved        [Object],
+714 silly install resolved        [Object],
+714 silly install resolved        [Object],
+714 silly install resolved        [Object],
+714 silly install resolved        [Object],
+714 silly install resolved        [Object],
+714 silly install resolved        [Object],
+714 silly install resolved        [Object],
+714 silly install resolved        [Object] ],
+714 silly install resolved     license: 'MIT',
+714 silly install resolved     engines: { node: '>=0.8' },
+714 silly install resolved     dependencies: {},
+714 silly install resolved     devDependencies: { nodeunit: '~0.9.0' },
+714 silly install resolved     optionalDependencies: {},
+714 silly install resolved     scripts: { test: 'nodeunit test.js' },
+714 silly install resolved     gitHead: '0e8216efc672496b612fd7ab62159117d16ec4a0',
+714 silly install resolved     homepage: 'https://github.com/pvorb/node-clone',
+714 silly install resolved     _id: 'clone@1.0.2',
+714 silly install resolved     _shasum: '260b7a99ebb1edfe247538175f783243cb19d149',
+714 silly install resolved     _from: 'clone@>=1.0.2 <2.0.0',
+714 silly install resolved     _npmVersion: '1.4.14',
+714 silly install resolved     _npmUser: { name: 'pvorb', email: 'paul@vorba.ch' },
+714 silly install resolved     maintainers: [ [Object] ],
+714 silly install resolved     dist:
+714 silly install resolved      { shasum: '260b7a99ebb1edfe247538175f783243cb19d149',
+714 silly install resolved        tarball: 'https://registry.npmjs.org/clone/-/clone-1.0.2.tgz' },
+714 silly install resolved     directories: {},
+714 silly install resolved     _resolved: 'https://registry.npmjs.org/clone/-/clone-1.0.2.tgz' },
+714 silly install resolved   { name: 'flatiron',
+714 silly install resolved     description: 'An elegant blend of convention and configuration for building apps in Node.js and the browser',
+714 silly install resolved     version: '0.4.3',
+714 silly install resolved     author: { name: 'Nodejitsu Inc.', email: 'info@nodejitsu.com' },
+714 silly install resolved     maintainers: [ [Object], [Object], [Object] ],
+714 silly install resolved     repository: { type: 'git', url: 'http://github.com/flatiron/flatiron.git' },
+714 silly install resolved     dependencies:
+714 silly install resolved      { broadway: '~0.3.2',
+714 silly install resolved        optimist: '0.6.0',
+714 silly install resolved        prompt: '0.2.14',
+714 silly install resolved        director: '1.2.7' },
+714 silly install resolved     devDependencies:
+714 silly install resolved      { st: '0.1.x',
+714 silly install resolved        request: '2.x.x',
+714 silly install resolved        resourceful: '0.3.x',
+714 silly install resolved        union: '0.4.x',
+714 silly install resolved        vows: '0.7.x' },
+714 silly install resolved     main: './lib/flatiron',
+714 silly install resolved     bin: { flatiron: './bin/flatiron' },
+714 silly install resolved     scripts: { test: 'vows --spec' },
+714 silly install resolved     engines: { node: '>= 0.4.0' },
+714 silly install resolved     gitHead: '0182515b94b1fc7bd76378d42db1033ecfa44b96',
+714 silly install resolved     bugs: { url: 'https://github.com/flatiron/flatiron/issues' },
+714 silly install resolved     homepage: 'https://github.com/flatiron/flatiron',
+714 silly install resolved     _id: 'flatiron@0.4.3',
+714 silly install resolved     _shasum: '248cf79a3da7d7dc379e2a11c92a2719cbb540f6',
+714 silly install resolved     _from: 'flatiron@>=0.4.2 <0.5.0',
+714 silly install resolved     _npmVersion: '1.4.23',
+714 silly install resolved     _npmUser: { name: 'swaagie', email: 'info@martijnswaagman.nl' },
+714 silly install resolved     dist:
+714 silly install resolved      { shasum: '248cf79a3da7d7dc379e2a11c92a2719cbb540f6',
+714 silly install resolved        tarball: 'https://registry.npmjs.org/flatiron/-/flatiron-0.4.3.tgz' },
+714 silly install resolved     directories: {},
+714 silly install resolved     _resolved: 'https://registry.npmjs.org/flatiron/-/flatiron-0.4.3.tgz' },
+714 silly install resolved   { name: 'utile',
+714 silly install resolved     description: 'A drop-in replacement for `util` with some additional advantageous functions',
+714 silly install resolved     version: '0.2.1',
+714 silly install resolved     author: { name: 'Nodejitsu Inc.', email: 'info@nodejitsu.com' },
+714 silly install resolved     maintainers: [ [Object], [Object], [Object] ],
+714 silly install resolved     repository: { type: 'git', url: 'http://github.com/flatiron/utile.git' },
+714 silly install resolved     dependencies:
+714 silly install resolved      { async: '~0.2.9',
+714 silly install resolved        'deep-equal': '*',
+714 silly install resolved        i: '0.3.x',
+714 silly install resolved        mkdirp: '0.x.x',
+714 silly install resolved        ncp: '0.4.x',
+714 silly install resolved        rimraf: '2.x.x' },
+714 silly install resolved     devDependencies: { vows: '0.7.x' },
+714 silly install resolved     scripts: { test: 'vows --spec' },
+714 silly install resolved     main: './lib/index',
+714 silly install resolved     engines: { node: '>= 0.6.4' },
+714 silly install resolved     bugs: { url: 'https://github.com/flatiron/utile/issues' },
+714 silly install resolved     _id: 'utile@0.2.1',
+714 silly install resolved     dist:
+714 silly install resolved      { shasum: '930c88e99098d6220834c356cbd9a770522d90d7',
+714 silly install resolved        tarball: 'https://registry.npmjs.org/utile/-/utile-0.2.1.tgz' },
+714 silly install resolved     _from: 'utile@>=0.2.1 <0.3.0',
+714 silly install resolved     _npmVersion: '1.3.8',
+714 silly install resolved     _npmUser: { name: 'jcrugzz', email: 'jcrugzz@gmail.com' },
+714 silly install resolved     directories: {},
+714 silly install resolved     _shasum: '930c88e99098d6220834c356cbd9a770522d90d7',
+714 silly install resolved     _resolved: 'https://registry.npmjs.org/utile/-/utile-0.2.1.tgz' },
+714 silly install resolved   { name: 'timespan',
+714 silly install resolved     description: 'A JavaScript TimeSpan library for node.js (and soon the browser)',
+714 silly install resolved     version: '2.3.0',
+714 silly install resolved     author: { name: 'Michael Stum', email: 'blog@stum.de' },
+714 silly install resolved     contributors: [ [Object] ],
+714 silly install resolved     repository:
+714 silly install resolved      { type: 'git',
+714 silly install resolved        url: 'https://github.com/indexzero/TimeSpan.js.git' },
+714 silly install resolved     keywords: [ 'time', 'dates', 'utilities', 'timespan' ],
+714 silly install resolved     devDependencies: { vows: '>= 0.7.0' },
+714 silly install resolved     main: './lib/time-span.js',
+714 silly install resolved     scripts: { test: 'vows test/*-test.js --spec' },
+714 silly install resolved     engines: { node: '>= 0.2.0' },
+714 silly install resolved     readme: '# timespan\n\nA simple implementation of TimeSpans in Javascript.\n\n## Installation in node.js\n\n### Installing npm (node package manager)\n``` bash\n  $ curl http://npmjs.org/install.sh | sh\n```\n\n### Installing timespan\n``` bash\n  [sudo] npm install timespan\n```\n\n## Usage \nYou have two options when creating a new TimeSpan object: either explicitly instantiate it using the TimeSpan constructor function or use a helper method to create from a specific length of time.\n\n### Using the new constructor\n\n``` js\n  var timespan = require(\'timespan\');\n  var ts = new timespan.TimeSpan();\n```\n\nThe constructor takes 5 parameters, all which are optional and which can be used to initialize the TimeSpan to a given value. These parameters are: `milliseconds`, `seconds`, `minutes`, `hours`, `days`.\n\n``` js\n  //\n  // Initializes the TimeSpan to 4 Minutes, 16 Seconds and 0 Milliseconds.\n  //\n  var ts = new TimeSpan(0,16,4)\n\n  //\n  // Initializes the TimeSpan to 3 hours, 4 minutes, 10 seconds and 0 msecs.\n  //\n  var ts = new TimeSpan(0,10,64,2);\n```\n\n### Using Construction Helper Method(s) \nYou can initialize a new TimeSpan by calling one of these Functions:\n\n``` js\n  timespan.FromSeconds(/* seconds */);\n  timespan.FromMinutes(/* minutes */);\n  timespan.FromHours(/* hours */);\n  timespan.FromDays(/* hours */);\n    \n  //\n  // This behaves differently, see below\n  //\n  timespan.FromDates(start, end);\n```\n\nThe first four helper methods take a single numeric parameter and create a new TimeSpan instance. e.g. `timespan.FromSeconds(45)` is equivalent to `new TimeSpan(0,45)`. If the parameter is invalid/not a number, it will just be treated as 0 no error will be thrown.\n\n`timespan.FromDates()` is different as it takes two dates. The TimeSpan will be the difference between these dates.\n\nIf the second date is earlier than the first date, the TimeSpan will have a negative value. You can pass in "true" as the third parameter to force the TimeSpan to be positive always.\n\n``` js\n  var date1 = new Date(2010, 3, 1, 10, 10, 5, 0);\n  var date2 = new Date(2010, 3, 1, 10, 10, 10, 0);\n  var ts = TimeSpan.FromDates(date2, date1);\n  var ts2 = TimeSpan.FromDates(date2, date1, true);\n  \n  //\n  // -5, because we put the later date first\n  //\n  console.log(ts.totalSeconds()); \n  \n  //\n  // 5, because we passed true as third parameter\n  //\n  console.log(ts2.totalSeconds()); \n```\n\n\n### Adding / Subtracting TimeSpans\nThere are several functions to add or subtract time:\n\n``` js\n  ts.addMilliseconds()\n  ts.addSeconds()\n  ts.addMinutes()\n  ts.addHours()\n  ts.addDays()\n  ts.subtractMilliseconds()\n  ts.subtractSeconds()\n  ts.subtractMinutes()\n  ts.subtractHours()\n  ts.subtractDays()\n```\n\nAll these functions take a single numeric parameter. If the parameter is invalid, not a number, or missing it will be ignored and no Error is thrown.\n\n``` js\n  var ts = new TimeSpan();\n  ts.addSeconds(30);\n  ts.addMinutes(2);\n  ts.subtractSeconds(60);\n  \n  //\n  // ts will now be a timespan of 1 minute and 30 seconds\n  //\n```\n\nThe parameter can be negative to negate the operation `ts.addSeconds(-30)` is equivalent to `ts.subtractSeconds(30)`.\n\n### Interacting with Other TimeSpan instances\nThese are the functions that interact with another TimeSpan:\n\n``` js\n  ts.add()\n  ts.subtract()\n  ts.equals()\n```\n\nadd and subtract add/subtract the other TimeSpan to the current one:\n\n``` js\n  var ts = TimeSpan.FromSeconds(30);\n  var ts2 = TimeSpan.FromMinutes(2);\n  ts.add(ts2);\n  \n  //\n  // ts is now a TimeSpan of 2 Minutes, 30 Seconds\n  // ts2 is unchanged\n  //\n```\n\nequals checks if two TimeSpans have the same time:\n\n``` js\n  var ts = TimeSpan.FromSeconds(30);\n  var ts2 = TimeSpan.FromSeconds(30);\n  var eq = ts.equals(ts2); // true\n  ts2.addSeconds(1);\n  var eq2 = ts.equals(ts2); // false\n```\n\n### Retrieving the Value of a TimeSpan\nThere are two sets of functions to retreive the function of the TimeSpan: those that deal with the full value in various measurements and another that gets the individual components.\n\n#### Retrieve the full value\n\n``` js\n  ts.totalMilliseconds()\n  ts.totalSeconds()\n  ts.totalMinutes()\n  ts.totalHours()\n  ts.totalDays()\n```\n\nThese functions convert the value to the given format and return it. The result can be a floating point number. These functions take a single parameter roundDown which can be set to true to round the value down to an Integer.\n\n``` js\n  var ts = TimeSpan.fromSeconds(90);\n  console.log(ts.totalMilliseconds()); // 90000\n  console.log(ts.totalSeconds());      // 90\n  console.log(ts.totalMinutes());      // 1.5\n  console.log(ts.totalMinutes(true));  // 1\n```\n\n#### Retrieve a component of the TimeSpan\n\n``` js\n  ts.milliseconds\n  ts.seconds\n  ts.minutes\n  ts.hours\n  ts.days\n```\n\nThese functions return a component of the TimeSpan that could be used to represent a clock. \n\n``` js\n  var ts = TimeSpan.FromSeconds(90);\n  console.log(ts.seconds()); // 30\n  console.log(ts.minutes()); // 1\n```\n\nBasically these value never "overflow" - seconds will only return 0 to 59, hours only 0 to 23 etc. Days could grow infinitely. All of these functions automatically round down the result:\n\n``` js\n  var ts = TimeSpan.FromDays(2);\n  ts.addHours(12);\n  console.log(ts.days());  // 2\n  console.log(ts.hours()); // 12\n```\n\n## Remark about Backwards Compatibility\nVersion 0.2.x was designed to work with [node.js][0] and backwards compatibility to the browser-based usage was not considered a high priority. This will be fixed in future versions, but for now if you need to use this in the browser, you can find the 0.1.x code under `/browser`.\n\n#### Author: [Michael Stum](http://www.stum.de)\n#### Contributors: [Charlie Robbins](http://github.com/indexzero)\n\n[0]: http://nodejs.org ',
+714 silly install resolved     readmeFilename: 'README.md',
+714 silly install resolved     _id: 'timespan@2.3.0',
+714 silly install resolved     dist:
+714 silly install resolved      { shasum: '4902ce040bd13d845c8f59b27e9d59bad6f39929',
+714 silly install resolved        tarball: 'https://registry.npmjs.org/timespan/-/timespan-2.3.0.tgz' },
+714 silly install resolved     _from: 'timespan@>=2.3.0 <2.4.0',
+714 silly install resolved     _npmVersion: '1.2.14',
+714 silly install resolved     _npmUser: { name: 'indexzero', email: 'charlie.robbins@gmail.com' },
+714 silly install resolved     maintainers: [ [Object] ],
+714 silly install resolved     directories: {},
+714 silly install resolved     _shasum: '4902ce040bd13d845c8f59b27e9d59bad6f39929',
+714 silly install resolved     _resolved: 'https://registry.npmjs.org/timespan/-/timespan-2.3.0.tgz' },
+714 silly install resolved   { name: 'nconf',
+714 silly install resolved     description: 'Hierarchical node.js configuration with files, environment variables, command-line arguments, and atomic object merging.',
+714 silly install resolved     version: '0.6.9',
+714 silly install resolved     author: { name: 'Nodejitsu Inc.', email: 'info@nodejitsu.com' },
+714 silly install resolved     maintainers: [ [Object], [Object], [Object] ],
+714 silly install resolved     repository: { type: 'git', url: 'http://github.com/flatiron/nconf.git' },
+714 silly install resolved     keywords: [ 'configuration', 'key value store', 'plugabble' ],
+714 silly install resolved     dependencies: { async: '0.2.9', ini: '1.x.x', optimist: '0.6.0' },
+714 silly install resolved     devDependencies: { vows: '0.7.x' },
+714 silly install resolved     main: './lib/nconf',
+714 silly install resolved     scripts: { test: 'vows test/*-test.js test/**/*-test.js --spec' },
+714 silly install resolved     engines: { node: '>= 0.4.0' },
+714 silly install resolved     bugs: { url: 'https://github.com/flatiron/nconf/issues' },
+714 silly install resolved     _id: 'nconf@0.6.9',
+714 silly install resolved     dist:
+714 silly install resolved      { shasum: '9570ef15ed6f9ae6b2b3c8d5e71b66d3193cd661',
+714 silly install resolved        tarball: 'https://registry.npmjs.org/nconf/-/nconf-0.6.9.tgz' },
+714 silly install resolved     _from: 'nconf@>=0.6.9 <0.7.0',
+714 silly install resolved     _npmVersion: '1.3.8',
+714 silly install resolved     _npmUser: { name: 'jcrugzz', email: 'jcrugzz@gmail.com' },
+714 silly install resolved     directories: {},
+714 silly install resolved     _shasum: '9570ef15ed6f9ae6b2b3c8d5e71b66d3193cd661',
+714 silly install resolved     _resolved: 'https://registry.npmjs.org/nconf/-/nconf-0.6.9.tgz' },
+714 silly install resolved   { name: 'winston',
+714 silly install resolved     description: 'A multi-transport async logging library for Node.js',
+714 silly install resolved     version: '0.8.3',
+714 silly install resolved     author: { name: 'Nodejitsu Inc.', email: 'info@nodejitsu.com' },
+714 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object] ],
+714 silly install resolved     repository: { type: 'git', url: 'https://github.com/flatiron/winston.git' },
+714 silly install resolved     keywords: [ 'logging', 'sysadmin', 'tools' ],
+714 silly install resolved     dependencies:
+714 silly install resolved      { async: '0.2.x',
+714 silly install resolved        colors: '0.6.x',
+714 silly install resolved        cycle: '1.0.x',
+714 silly install resolved        eyes: '0.1.x',
+714 silly install resolved        isstream: '0.1.x',
+714 silly install resolved        pkginfo: '0.3.x',
+714 silly install resolved        'stack-trace': '0.0.x' },
+714 silly install resolved     devDependencies: { vows: '0.7.x' },
+714 silly install resolved     main: './lib/winston',
+714 silly install resolved     scripts: { test: 'vows --spec --isolate' },
+714 silly install resolved     engines: { node: '>= 0.6.0' },
+714 silly install resolved     licenses: [ [Object] ],
+714 silly install resolved     gitHead: 'd12b2688d7d82557a5f5d490217e3c516bb661cb',
+714 silly install resolved     bugs: { url: 'https://github.com/flatiron/winston/issues' },
+714 silly install resolved     homepage: 'https://github.com/flatiron/winston',
+714 silly install resolved     _id: 'winston@0.8.3',
+714 silly install resolved     _shasum: '64b6abf4cd01adcaefd5009393b1d8e8bec19db0',
+714 silly install resolved     _from: 'winston@>=0.8.1 <0.9.0',
+714 silly install resolved     _npmVersion: '2.1.6',
+714 silly install resolved     _nodeVersion: '0.10.32',
+714 silly install resolved     _npmUser: { name: 'jcrugzz', email: 'jcrugzz@gmail.com' },
+714 silly install resolved     dist:
+714 silly install resolved      { shasum: '64b6abf4cd01adcaefd5009393b1d8e8bec19db0',
+714 silly install resolved        tarball: 'https://registry.npmjs.org/winston/-/winston-0.8.3.tgz' },
+714 silly install resolved     directories: {},
+714 silly install resolved     _resolved: 'https://registry.npmjs.org/winston/-/winston-0.8.3.tgz' },
+714 silly install resolved   { name: 'cliff',
+714 silly install resolved     description: 'Your CLI formatting friend.',
+714 silly install resolved     version: '0.1.10',
+714 silly install resolved     author: { name: 'Charlie Robbins', email: 'charlie.robbins@gmail.com' },
+714 silly install resolved     repository: { type: 'git', url: 'http://github.com/flatiron/cliff.git' },
+714 silly install resolved     keywords: [ 'cli', 'logging', 'tools', 'winston' ],
+714 silly install resolved     dependencies: { colors: '~1.0.3', eyes: '~0.1.8', winston: '0.8.x' },
+714 silly install resolved     devDependencies: { vows: '0.8.x' },
+714 silly install resolved     main: './lib/cliff',
+714 silly install resolved     scripts: { test: 'vows test/*-test.js --spec' },
+714 silly install resolved     engines: { node: '>= 0.4.0' },
+714 silly install resolved     gitHead: '3baf40a73432a26303f080176c7d13fe293bc1d8',
+714 silly install resolved     bugs: { url: 'https://github.com/flatiron/cliff/issues' },
+714 silly install resolved     homepage: 'https://github.com/flatiron/cliff',
+714 silly install resolved     _id: 'cliff@0.1.10',
+714 silly install resolved     _shasum: '53be33ea9f59bec85609ee300ac4207603e52013',
+714 silly install resolved     _from: 'cliff@>=0.1.9 <0.2.0',
+714 silly install resolved     _npmVersion: '2.1.9',
+714 silly install resolved     _nodeVersion: '0.10.33',
+714 silly install resolved     _npmUser: { name: 'indexzero', email: 'charlie.robbins@gmail.com' },
+714 silly install resolved     maintainers: [ [Object], [Object] ],
+714 silly install resolved     dist:
+714 silly install resolved      { shasum: '53be33ea9f59bec85609ee300ac4207603e52013',
+714 silly install resolved        tarball: 'https://registry.npmjs.org/cliff/-/cliff-0.1.10.tgz' },
+714 silly install resolved     directories: {},
+714 silly install resolved     _resolved: 'https://registry.npmjs.org/cliff/-/cliff-0.1.10.tgz' },
+714 silly install resolved   { author:
+714 silly install resolved      { name: 'Rafael de Oleza',
+714 silly install resolved        email: 'rafeca@gmail.com',
+714 silly install resolved        url: 'https://github.com/rafeca' },
+714 silly install resolved     name: 'prettyjson',
+714 silly install resolved     description: 'Package for formatting JSON data in a coloured YAML-style, perfect for CLI output',
+714 silly install resolved     version: '1.1.3',
+714 silly install resolved     homepage: 'http://rafeca.com/prettyjson',
+714 silly install resolved     keywords: [ 'json', 'cli', 'formatting', 'colors' ],
+714 silly install resolved     repository:
+714 silly install resolved      { type: 'git',
+714 silly install resolved        url: 'git+https://github.com/rafeca/prettyjson.git' },
+714 silly install resolved     bugs: { url: 'https://github.com/rafeca/prettyjson/issues' },
+714 silly install resolved     main: './lib/prettyjson',
+714 silly install resolved     license: 'MIT',
+714 silly install resolved     scripts:
+714 silly install resolved      { test: 'npm run jshint && mocha --reporter spec',
+714 silly install resolved        testwin: 'node ./node_modules/mocha/bin/mocha --reporter spec',
+714 silly install resolved        jshint: 'jshint lib/*.js',
+714 silly install resolved        coverage: 'istanbul cover _mocha --report lcovonly -- -R spec',
+714 silly install resolved        coveralls: 'npm run coverage && cat ./coverage/lcov.info | coveralls && rm -rf ./coverage',
+714 silly install resolved        changelog: 'git log $(git describe --tags --abbrev=0)..HEAD --pretty=\'* %s\' --first-parent' },
+714 silly install resolved     bin: { prettyjson: './bin/prettyjson' },
+714 silly install resolved     dependencies: { colors: '^1.1.2', minimist: '^1.1.3' },
+714 silly install resolved     devDependencies:
+714 silly install resolved      { coveralls: '^2.11.3',
+714 silly install resolved        istanbul: '^0.3.17',
+714 silly install resolved        jshint: '^2.4.4',
+714 silly install resolved        mocha: '^2.2.5',
+714 silly install resolved        'mocha-lcov-reporter': '0.0.2',
+714 silly install resolved        should: '^7.0.2' },
+714 silly install resolved     gitHead: '99dac22baba027875536f543f8dbe5b4f9d9f986',
+714 silly install resolved     _id: 'prettyjson@1.1.3',
+714 silly install resolved     _shasum: 'd0787f732c9c3a566f4165fa4f1176fd67e6b263',
+714 silly install resolved     _from: 'prettyjson@>=1.1.2 <2.0.0',
+714 silly install resolved     _npmVersion: '2.11.3',
+714 silly install resolved     _nodeVersion: '0.12.7',
+714 silly install resolved     _npmUser: { name: 'rafeca', email: 'rafeca@gmail.com' },
+714 silly install resolved     dist:
+714 silly install resolved      { shasum: 'd0787f732c9c3a566f4165fa4f1176fd67e6b263',
+714 silly install resolved        tarball: 'https://registry.npmjs.org/prettyjson/-/prettyjson-1.1.3.tgz' },
+714 silly install resolved     maintainers: [ [Object] ],
+714 silly install resolved     directories: {},
+714 silly install resolved     _resolved: 'https://registry.npmjs.org/prettyjson/-/prettyjson-1.1.3.tgz' } ]
+715 info install path-is-absolute@1.0.0 into /usr/local/lib/node_modules/forever
+716 info install colors@0.6.2 into /usr/local/lib/node_modules/forever
+717 info install object-assign@3.0.0 into /usr/local/lib/node_modules/forever
+718 info install nssocket@0.5.3 into /usr/local/lib/node_modules/forever
+719 info install optimist@0.6.1 into /usr/local/lib/node_modules/forever
+720 info install shush@1.0.0 into /usr/local/lib/node_modules/forever
+721 info install forever-monitor@1.6.0 into /usr/local/lib/node_modules/forever
+722 info install clone@1.0.2 into /usr/local/lib/node_modules/forever
+723 info install flatiron@0.4.3 into /usr/local/lib/node_modules/forever
+724 info install utile@0.2.1 into /usr/local/lib/node_modules/forever
+725 info install timespan@2.3.0 into /usr/local/lib/node_modules/forever
+726 info install nconf@0.6.9 into /usr/local/lib/node_modules/forever
+727 info install winston@0.8.3 into /usr/local/lib/node_modules/forever
+728 info install cliff@0.1.10 into /usr/local/lib/node_modules/forever
+729 info install prettyjson@1.1.3 into /usr/local/lib/node_modules/forever
+730 info installOne path-is-absolute@1.0.0
+731 verbose installOne of path-is-absolute to /usr/local/lib/node_modules/forever not in flight; installing
+732 info installOne colors@0.6.2
+733 verbose installOne of colors to /usr/local/lib/node_modules/forever not in flight; installing
+734 info installOne object-assign@3.0.0
+735 verbose installOne of object-assign to /usr/local/lib/node_modules/forever not in flight; installing
+736 info installOne nssocket@0.5.3
+737 verbose installOne of nssocket to /usr/local/lib/node_modules/forever not in flight; installing
+738 info installOne optimist@0.6.1
+739 verbose installOne of optimist to /usr/local/lib/node_modules/forever not in flight; installing
+740 info installOne shush@1.0.0
+741 verbose installOne of shush to /usr/local/lib/node_modules/forever not in flight; installing
+742 info installOne forever-monitor@1.6.0
+743 verbose installOne of forever-monitor to /usr/local/lib/node_modules/forever not in flight; installing
+744 info installOne clone@1.0.2
+745 verbose installOne of clone to /usr/local/lib/node_modules/forever not in flight; installing
+746 info installOne flatiron@0.4.3
+747 verbose installOne of flatiron to /usr/local/lib/node_modules/forever not in flight; installing
+748 info installOne utile@0.2.1
+749 verbose installOne of utile to /usr/local/lib/node_modules/forever not in flight; installing
+750 info installOne timespan@2.3.0
+751 verbose installOne of timespan to /usr/local/lib/node_modules/forever not in flight; installing
+752 info installOne nconf@0.6.9
+753 verbose installOne of nconf to /usr/local/lib/node_modules/forever not in flight; installing
+754 info installOne winston@0.8.3
+755 verbose installOne of winston to /usr/local/lib/node_modules/forever not in flight; installing
+756 info installOne cliff@0.1.10
+757 verbose installOne of cliff to /usr/local/lib/node_modules/forever not in flight; installing
+758 info installOne prettyjson@1.1.3
+759 verbose installOne of prettyjson to /usr/local/lib/node_modules/forever not in flight; installing
+760 verbose lock using /root/.npm/_locks/path-is-absolute-e8b0424030803351.lock for /usr/local/lib/node_modules/forever/node_modules/path-is-absolute
+761 verbose lock using /root/.npm/_locks/colors-92fd20c205b40ba0.lock for /usr/local/lib/node_modules/forever/node_modules/colors
+762 verbose lock using /root/.npm/_locks/object-assign-348c49992b61344f.lock for /usr/local/lib/node_modules/forever/node_modules/object-assign
+763 verbose lock using /root/.npm/_locks/nssocket-5adcb6e967220cad.lock for /usr/local/lib/node_modules/forever/node_modules/nssocket
+764 verbose lock using /root/.npm/_locks/optimist-e12ecb1f44e110d7.lock for /usr/local/lib/node_modules/forever/node_modules/optimist
+765 verbose lock using /root/.npm/_locks/shush-4684d841c6fcef69.lock for /usr/local/lib/node_modules/forever/node_modules/shush
+766 verbose lock using /root/.npm/_locks/forever-monitor-80eca36c00776883.lock for /usr/local/lib/node_modules/forever/node_modules/forever-monitor
+767 verbose lock using /root/.npm/_locks/clone-f2b81cc0b9caa790.lock for /usr/local/lib/node_modules/forever/node_modules/clone
+768 verbose lock using /root/.npm/_locks/flatiron-0fb84b2d8e8a326e.lock for /usr/local/lib/node_modules/forever/node_modules/flatiron
+769 verbose lock using /root/.npm/_locks/utile-2af21a7a2c674b41.lock for /usr/local/lib/node_modules/forever/node_modules/utile
+770 verbose lock using /root/.npm/_locks/timespan-87d43d97429cd3a5.lock for /usr/local/lib/node_modules/forever/node_modules/timespan
+771 verbose lock using /root/.npm/_locks/nconf-50fe880ffa2228be.lock for /usr/local/lib/node_modules/forever/node_modules/nconf
+772 verbose lock using /root/.npm/_locks/winston-cbe290e38278d986.lock for /usr/local/lib/node_modules/forever/node_modules/winston
+773 verbose lock using /root/.npm/_locks/cliff-ef4bd54baaf221ec.lock for /usr/local/lib/node_modules/forever/node_modules/cliff
+774 verbose lock using /root/.npm/_locks/prettyjson-a8b24d1118dd36d5.lock for /usr/local/lib/node_modules/forever/node_modules/prettyjson
+775 silly install write writing path-is-absolute 1.0.0 to /usr/local/lib/node_modules/forever/node_modules/path-is-absolute
+776 silly install write writing colors 0.6.2 to /usr/local/lib/node_modules/forever/node_modules/colors
+777 silly install write writing object-assign 3.0.0 to /usr/local/lib/node_modules/forever/node_modules/object-assign
+778 silly install write writing nssocket 0.5.3 to /usr/local/lib/node_modules/forever/node_modules/nssocket
+779 silly install write writing optimist 0.6.1 to /usr/local/lib/node_modules/forever/node_modules/optimist
+780 silly install write writing shush 1.0.0 to /usr/local/lib/node_modules/forever/node_modules/shush
+781 silly install write writing forever-monitor 1.6.0 to /usr/local/lib/node_modules/forever/node_modules/forever-monitor
+782 silly install write writing clone 1.0.2 to /usr/local/lib/node_modules/forever/node_modules/clone
+783 silly install write writing flatiron 0.4.3 to /usr/local/lib/node_modules/forever/node_modules/flatiron
+784 silly install write writing utile 0.2.1 to /usr/local/lib/node_modules/forever/node_modules/utile
+785 silly install write writing timespan 2.3.0 to /usr/local/lib/node_modules/forever/node_modules/timespan
+786 silly install write writing nconf 0.6.9 to /usr/local/lib/node_modules/forever/node_modules/nconf
+787 silly install write writing winston 0.8.3 to /usr/local/lib/node_modules/forever/node_modules/winston
+788 silly install write writing cliff 0.1.10 to /usr/local/lib/node_modules/forever/node_modules/cliff
+789 silly install write writing prettyjson 1.1.3 to /usr/local/lib/node_modules/forever/node_modules/prettyjson
+790 verbose unbuild lib/node_modules/forever/node_modules/path-is-absolute
+791 verbose unbuild lib/node_modules/forever/node_modules/colors
+792 verbose unbuild lib/node_modules/forever/node_modules/object-assign
+793 verbose unbuild lib/node_modules/forever/node_modules/nssocket
+794 verbose unbuild lib/node_modules/forever/node_modules/optimist
+795 verbose unbuild lib/node_modules/forever/node_modules/shush
+796 verbose unbuild lib/node_modules/forever/node_modules/forever-monitor
+797 verbose unbuild lib/node_modules/forever/node_modules/clone
+798 verbose unbuild lib/node_modules/forever/node_modules/utile
+799 verbose unbuild lib/node_modules/forever/node_modules/timespan
+800 verbose unbuild lib/node_modules/forever/node_modules/nconf
+801 verbose unbuild lib/node_modules/forever/node_modules/winston
+802 verbose unbuild lib/node_modules/forever/node_modules/cliff
+803 verbose unbuild lib/node_modules/forever/node_modules/flatiron
+804 verbose unbuild lib/node_modules/forever/node_modules/prettyjson
+805 silly gentlyRm /usr/local/lib/node_modules/forever/node_modules/path-is-absolute is being purged from base /usr/local
+806 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/forever/node_modules/path-is-absolute
+807 silly gentlyRm /usr/local/lib/node_modules/forever/node_modules/colors is being purged from base /usr/local
+808 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/forever/node_modules/colors
+809 silly gentlyRm /usr/local/lib/node_modules/forever/node_modules/object-assign is being purged from base /usr/local
+810 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/forever/node_modules/object-assign
+811 silly gentlyRm /usr/local/lib/node_modules/forever/node_modules/nssocket is being purged from base /usr/local
+812 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/forever/node_modules/nssocket
+813 silly gentlyRm /usr/local/lib/node_modules/forever/node_modules/optimist is being purged from base /usr/local
+814 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/forever/node_modules/optimist
+815 silly gentlyRm /usr/local/lib/node_modules/forever/node_modules/shush is being purged from base /usr/local
+816 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/forever/node_modules/shush
+817 silly gentlyRm /usr/local/lib/node_modules/forever/node_modules/forever-monitor is being purged from base /usr/local
+818 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/forever/node_modules/forever-monitor
+819 silly gentlyRm /usr/local/lib/node_modules/forever/node_modules/clone is being purged from base /usr/local
+820 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/forever/node_modules/clone
+821 silly gentlyRm /usr/local/lib/node_modules/forever/node_modules/utile is being purged from base /usr/local
+822 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/forever/node_modules/utile
+823 silly gentlyRm /usr/local/lib/node_modules/forever/node_modules/timespan is being purged from base /usr/local
+824 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/forever/node_modules/timespan
+825 silly gentlyRm /usr/local/lib/node_modules/forever/node_modules/nconf is being purged from base /usr/local
+826 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/forever/node_modules/nconf
+827 silly gentlyRm /usr/local/lib/node_modules/forever/node_modules/winston is being purged from base /usr/local
+828 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/forever/node_modules/winston
+829 silly gentlyRm /usr/local/lib/node_modules/forever/node_modules/cliff is being purged from base /usr/local
+830 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/forever/node_modules/cliff
+831 verbose tar unpack /root/.npm/path-is-absolute/1.0.0/package.tgz
+832 verbose tar unpacking to /usr/local/lib/node_modules/forever/node_modules/path-is-absolute
+833 silly gentlyRm /usr/local/lib/node_modules/forever/node_modules/path-is-absolute is being purged
+834 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/forever/node_modules/path-is-absolute
+835 verbose tar unpack /root/.npm/colors/0.6.2/package.tgz
+836 verbose tar unpacking to /usr/local/lib/node_modules/forever/node_modules/colors
+837 silly gentlyRm /usr/local/lib/node_modules/forever/node_modules/colors is being purged
+838 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/forever/node_modules/colors
+839 verbose tar unpack /root/.npm/object-assign/3.0.0/package.tgz
+840 verbose tar unpacking to /usr/local/lib/node_modules/forever/node_modules/object-assign
+841 silly gentlyRm /usr/local/lib/node_modules/forever/node_modules/object-assign is being purged
+842 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/forever/node_modules/object-assign
+843 verbose tar unpack /root/.npm/nssocket/0.5.3/package.tgz
+844 verbose tar unpacking to /usr/local/lib/node_modules/forever/node_modules/nssocket
+845 silly gentlyRm /usr/local/lib/node_modules/forever/node_modules/nssocket is being purged
+846 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/forever/node_modules/nssocket
+847 verbose tar unpack /root/.npm/optimist/0.6.1/package.tgz
+848 verbose tar unpacking to /usr/local/lib/node_modules/forever/node_modules/optimist
+849 silly gentlyRm /usr/local/lib/node_modules/forever/node_modules/optimist is being purged
+850 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/forever/node_modules/optimist
+851 verbose tar unpack /root/.npm/shush/1.0.0/package.tgz
+852 verbose tar unpacking to /usr/local/lib/node_modules/forever/node_modules/shush
+853 silly gentlyRm /usr/local/lib/node_modules/forever/node_modules/shush is being purged
+854 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/forever/node_modules/shush
+855 verbose tar unpack /root/.npm/forever-monitor/1.6.0/package.tgz
+856 verbose tar unpacking to /usr/local/lib/node_modules/forever/node_modules/forever-monitor
+857 silly gentlyRm /usr/local/lib/node_modules/forever/node_modules/forever-monitor is being purged
+858 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/forever/node_modules/forever-monitor
+859 verbose tar unpack /root/.npm/clone/1.0.2/package.tgz
+860 verbose tar unpacking to /usr/local/lib/node_modules/forever/node_modules/clone
+861 silly gentlyRm /usr/local/lib/node_modules/forever/node_modules/clone is being purged
+862 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/forever/node_modules/clone
+863 silly gentlyRm /usr/local/lib/node_modules/forever/node_modules/flatiron is being purged from base /usr/local
+864 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/forever/node_modules/flatiron
+865 verbose tar unpack /root/.npm/utile/0.2.1/package.tgz
+866 verbose tar unpacking to /usr/local/lib/node_modules/forever/node_modules/utile
+867 silly gentlyRm /usr/local/lib/node_modules/forever/node_modules/utile is being purged
+868 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/forever/node_modules/utile
+869 verbose tar unpack /root/.npm/timespan/2.3.0/package.tgz
+870 verbose tar unpacking to /usr/local/lib/node_modules/forever/node_modules/timespan
+871 silly gentlyRm /usr/local/lib/node_modules/forever/node_modules/timespan is being purged
+872 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/forever/node_modules/timespan
+873 verbose tar unpack /root/.npm/nconf/0.6.9/package.tgz
+874 verbose tar unpacking to /usr/local/lib/node_modules/forever/node_modules/nconf
+875 silly gentlyRm /usr/local/lib/node_modules/forever/node_modules/nconf is being purged
+876 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/forever/node_modules/nconf
+877 verbose tar unpack /root/.npm/winston/0.8.3/package.tgz
+878 verbose tar unpacking to /usr/local/lib/node_modules/forever/node_modules/winston
+879 silly gentlyRm /usr/local/lib/node_modules/forever/node_modules/winston is being purged
+880 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/forever/node_modules/winston
+881 verbose tar unpack /root/.npm/cliff/0.1.10/package.tgz
+882 verbose tar unpacking to /usr/local/lib/node_modules/forever/node_modules/cliff
+883 silly gentlyRm /usr/local/lib/node_modules/forever/node_modules/cliff is being purged
+884 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/forever/node_modules/cliff
+885 silly gentlyRm /usr/local/lib/node_modules/forever/node_modules/prettyjson is being purged from base /usr/local
+886 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/forever/node_modules/prettyjson
+887 silly gunzTarPerm modes [ '755', '644' ]
+888 silly gunzTarPerm modes [ '755', '644' ]
+889 silly gunzTarPerm modes [ '755', '644' ]
+890 silly gunzTarPerm modes [ '755', '644' ]
+891 silly gunzTarPerm modes [ '755', '644' ]
+892 silly gunzTarPerm modes [ '755', '644' ]
+893 silly gunzTarPerm modes [ '755', '644' ]
+894 silly gunzTarPerm modes [ '755', '644' ]
+895 verbose tar unpack /root/.npm/flatiron/0.4.3/package.tgz
+896 verbose tar unpacking to /usr/local/lib/node_modules/forever/node_modules/flatiron
+897 silly gentlyRm /usr/local/lib/node_modules/forever/node_modules/flatiron is being purged
+898 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/forever/node_modules/flatiron
+899 silly gunzTarPerm modes [ '755', '644' ]
+900 silly gunzTarPerm modes [ '755', '644' ]
+901 silly gunzTarPerm modes [ '755', '644' ]
+902 silly gunzTarPerm modes [ '755', '644' ]
+903 silly gunzTarPerm modes [ '755', '644' ]
+904 verbose tar unpack /root/.npm/prettyjson/1.1.3/package.tgz
+905 verbose tar unpacking to /usr/local/lib/node_modules/forever/node_modules/prettyjson
+906 silly gentlyRm /usr/local/lib/node_modules/forever/node_modules/prettyjson is being purged
+907 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/forever/node_modules/prettyjson
+908 silly gunzTarPerm modes [ '755', '644' ]
+909 silly gunzTarPerm modes [ '755', '644' ]
+910 silly gunzTarPerm extractEntry package.json
+911 silly gunzTarPerm extractEntry package.json
+912 silly gunzTarPerm extractEntry package.json
+913 silly gunzTarPerm extractEntry package.json
+914 silly gunzTarPerm extractEntry package.json
+915 silly gunzTarPerm extractEntry package.json
+916 silly gunzTarPerm extractEntry package.json
+917 silly gunzTarPerm extractEntry package.json
+918 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+919 silly gunzTarPerm extractEntry package.json
+920 silly gunzTarPerm extractEntry package.json
+921 silly gunzTarPerm extractEntry package.json
+922 silly gunzTarPerm extractEntry package.json
+923 silly gunzTarPerm extractEntry package.json
+924 silly gunzTarPerm extractEntry package.json
+925 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+926 silly gunzTarPerm extractEntry package.json
+927 silly gunzTarPerm extractEntry index.js
+928 silly gunzTarPerm extractEntry license
+929 silly gunzTarPerm extractEntry colors.js
+930 silly gunzTarPerm extractEntry example.js
+931 silly gunzTarPerm extractEntry index.js
+932 silly gunzTarPerm extractEntry license
+933 silly gunzTarPerm extractEntry .npmignore
+934 silly gunzTarPerm extractEntry README.md
+935 silly gunzTarPerm extractEntry LICENSE
+936 silly gunzTarPerm extractEntry index.js
+937 silly gunzTarPerm extractEntry .npmignore
+938 silly gunzTarPerm extractEntry README.md
+939 silly gunzTarPerm extractEntry .npmignore
+940 silly gunzTarPerm extractEntry README.md
+941 silly gunzTarPerm extractEntry .npmignore
+942 silly gunzTarPerm modified mode [ '.npmignore', 438, 420 ]
+943 silly gunzTarPerm extractEntry README.md
+944 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+945 silly gunzTarPerm extractEntry .npmignore
+946 silly gunzTarPerm extractEntry README.md
+947 silly gunzTarPerm extractEntry .npmignore
+948 silly gunzTarPerm extractEntry README.md
+949 silly gunzTarPerm extractEntry .npmignore
+950 silly gunzTarPerm extractEntry README.md
+951 silly gunzTarPerm extractEntry .npmignore
+952 silly gunzTarPerm extractEntry README.md
+953 silly gunzTarPerm extractEntry .npmignore
+954 silly gunzTarPerm extractEntry README.md
+955 silly gunzTarPerm extractEntry .npmignore
+956 silly gunzTarPerm extractEntry README.md
+957 silly gunzTarPerm extractEntry .npmignore
+958 silly gunzTarPerm extractEntry README.md
+959 silly gunzTarPerm extractEntry readme.md
+960 silly gunzTarPerm extractEntry test.js
+961 silly gunzTarPerm extractEntry MIT-LICENSE.txt
+962 silly gunzTarPerm extractEntry ReadMe.md
+963 silly gunzTarPerm extractEntry example.html
+964 silly gunzTarPerm extractEntry themes/winston-dark.js
+965 silly gunzTarPerm extractEntry themes/winston-light.js
+966 silly gunzTarPerm extractEntry readme.md
+967 silly gunzTarPerm extractEntry LICENSE
+968 silly gunzTarPerm extractEntry .travis.yml
+969 silly gunzTarPerm extractEntry .travis.yml
+970 silly gunzTarPerm extractEntry example/bool.js
+971 silly gunzTarPerm extractEntry LICENSE
+972 silly gunzTarPerm extractEntry index.js
+973 silly gunzTarPerm extractEntry LICENSE
+974 silly gunzTarPerm extractEntry .travis.yml
+975 silly gunzTarPerm extractEntry LICENSE
+976 silly gunzTarPerm extractEntry browser/TimeSpan-1.2.js
+977 silly gunzTarPerm extractEntry LICENSE
+978 silly gunzTarPerm extractEntry usage.js
+979 silly gunzTarPerm extractEntry LICENSE
+980 silly gunzTarPerm extractEntry LICENSE
+981 silly gunzTarPerm extractEntry assets/inspect.png
+982 silly gunzTarPerm modified mode [ 'assets/inspect.png', 511, 493 ]
+983 silly gunzTarPerm extractEntry LICENSE
+984 silly gunzTarPerm extractEntry examples/all-env-vars.js
+985 silly gunzTarPerm extractEntry LICENSE
+986 silly gunzTarPerm extractEntry examples/http-sample.js
+987 silly gunzTarPerm extractEntry examples/cli-sample/index.js
+988 silly gunzTarPerm extractEntry examples/cli-sample/print.js
+989 silly gunzTarPerm extractEntry examples/resourceful-app/package.json
+990 silly gunzTarPerm extractEntry examples/resourceful-app/app.js
+991 silly gunzTarPerm extractEntry examples/resourceful-app/app/resources/creature.js
+992 silly gunzTarPerm extractEntry examples/socket.io/server.js
+993 silly gunzTarPerm extractEntry examples/socket.io/index.html
+994 silly gunzTarPerm extractEntry examples/static-app/package.json
+995 silly gunzTarPerm extractEntry examples/static-app/app.js
+996 silly gunzTarPerm extractEntry examples/static-app/app/assets/style.js
+997 silly gunzTarPerm extractEntry examples/static-app/app/assets/style.css
+998 silly gunzTarPerm extractEntry bin/flatiron
+999 silly gunzTarPerm extractEntry lib/flatiron.js
+1000 silly gunzTarPerm extractEntry lib/flatiron/app.js
+1001 silly gunzTarPerm extractEntry lib/flatiron/common.js
+1002 silly gunzTarPerm extractEntry lib/flatiron/constants.js
+1003 silly gunzTarPerm extractEntry lib/flatiron/cli/create.js
+1004 silly gunzTarPerm modified mode [ 'lib/flatiron/cli/create.js', 436, 420 ]
+1005 silly gunzTarPerm extractEntry lib/flatiron/plugins/cli.js
+1006 silly gunzTarPerm extractEntry lib/flatiron/plugins/http.js
+1007 silly gunzTarPerm extractEntry lib/flatiron/plugins/resourceful.js
+1008 silly gunzTarPerm extractEntry lib/flatiron/plugins/static.js
+1009 silly gunzTarPerm extractEntry scaffolds/cli/package.json
+1010 silly gunzTarPerm extractEntry scaffolds/cli/app.js
+1011 silly gunzTarPerm extractEntry scaffolds/cli/config/config.json
+1012 silly gunzTarPerm extractEntry scaffolds/cli/directories.json
+1013 silly gunzTarPerm extractEntry scaffolds/cli/files.json
+1014 silly gunzTarPerm extractEntry scaffolds/cli/lib/index.js
+1015 silly gunzTarPerm extractEntry scaffolds/http/package.json
+1016 silly gunzTarPerm extractEntry scaffolds/http/app.js
+1017 silly gunzTarPerm extractEntry scaffolds/http/config/config.json
+1018 silly gunzTarPerm extractEntry scaffolds/http/directories.json
+1019 silly gunzTarPerm extractEntry scaffolds/http/files.json
+1020 silly gunzTarPerm extractEntry .travis.yml
+1021 silly gunzTarPerm extractEntry test/flatiron-test.js
+1022 silly gunzTarPerm extractEntry test/fixtures/sample-app/app/new-york/controller.js
+1023 silly gunzTarPerm extractEntry test/fixtures/sample-app/app/new-york/index.js
+1024 silly gunzTarPerm extractEntry test/fixtures/sample-app/app/new-york/new-york.js
+1025 silly gunzTarPerm extractEntry test/plugins/resourceful-test.js
+1026 silly gunzTarPerm extractEntry test/plugins/static-test.js
+1027 silly gunzTarPerm extractEntry LICENSE
+1028 silly gunzTarPerm modified mode [ 'LICENSE', 438, 420 ]
+1029 silly gunzTarPerm extractEntry test.js
+1030 silly gunzTarPerm modified mode [ 'test.js', 438, 420 ]
+1031 silly gunzTarPerm extractEntry LICENSE
+1032 silly gunzTarPerm extractEntry Authors.md
+1033 silly gunzTarPerm extractEntry examples/bla.js
+1034 silly gunzTarPerm extractEntry examples/foo.js
+1035 silly gunzTarPerm extractEntry .travis.yml
+1036 silly gunzTarPerm extractEntry CHANGELOG.md
+1037 silly gunzTarPerm extractEntry lib/args.js
+1038 silly gunzTarPerm extractEntry browser/TimeSpan-1.2.min.js
+1039 silly gunzTarPerm extractEntry .travis.yml
+1040 silly gunzTarPerm extractEntry CHANGELOG.md
+1041 silly gunzTarPerm extractEntry docs/docco.css
+1042 silly gunzTarPerm extractEntry docs/nconf/common.html
+1043 silly gunzTarPerm extractEntry docs/nconf/formats.html
+1044 silly gunzTarPerm extractEntry docs/nconf/provider.html
+1045 silly gunzTarPerm extractEntry docs/nconf/stores/file.html
+1046 silly gunzTarPerm extractEntry docs/nconf/stores/memory.html
+1047 silly gunzTarPerm extractEntry docs/nconf/stores/system.html
+1048 silly gunzTarPerm extractEntry docs/nconf/stores.html
+1049 silly gunzTarPerm extractEntry docs/nconf.html
+1050 silly gunzTarPerm extractEntry lib/nconf.js
+1051 silly gunzTarPerm extractEntry lib/nconf/common.js
+1052 silly gunzTarPerm extractEntry lib/nconf/formats.js
+1053 silly gunzTarPerm extractEntry lib/nconf/provider.js
+1054 silly gunzTarPerm extractEntry lib/nconf/stores/argv.js
+1055 silly gunzTarPerm extractEntry lib/nconf/stores/env.js
+1056 silly gunzTarPerm extractEntry lib/nconf/stores/file.js
+1057 silly gunzTarPerm extractEntry lib/nconf/stores/literal.js
+1058 silly gunzTarPerm extractEntry lib/nconf/stores/memory.js
+1059 silly gunzTarPerm extractEntry test/common-test.js
+1060 silly gunzTarPerm extractEntry test/complete-test.js
+1061 silly gunzTarPerm extractEntry test/helpers.js
+1062 silly gunzTarPerm extractEntry test/hierarchy-test.js
+1063 silly gunzTarPerm extractEntry test/nconf-test.js
+1064 silly gunzTarPerm extractEntry test/provider-save-test.js
+1065 silly gunzTarPerm extractEntry test/provider-test.js
+1066 silly gunzTarPerm extractEntry test/fixtures/data.js
+1067 silly gunzTarPerm extractEntry test/fixtures/bom.json
+1068 silly gunzTarPerm extractEntry test/fixtures/complete.json
+1069 silly gunzTarPerm extractEntry test/fixtures/hierarchy/global.json
+1070 silly gunzTarPerm extractEntry test/fixtures/hierarchy/hierarchical.json
+1071 silly gunzTarPerm extractEntry test/fixtures/hierarchy/user.json
+1072 silly gunzTarPerm extractEntry test/fixtures/malformed.json
+1073 silly gunzTarPerm extractEntry test/fixtures/merge/file1.json
+1074 silly gunzTarPerm extractEntry test/fixtures/merge/file2.json
+1075 silly gunzTarPerm extractEntry test/fixtures/no-bom.json
+1076 silly gunzTarPerm extractEntry test/fixtures/scripts/nconf-argv.js
+1077 silly gunzTarPerm extractEntry test/fixtures/scripts/nconf-change-argv.js
+1078 silly gunzTarPerm extractEntry test/fixtures/scripts/nconf-env.js
+1079 silly gunzTarPerm extractEntry test/fixtures/scripts/nconf-hierarchical-file-argv.js
+1080 silly gunzTarPerm extractEntry test/fixtures/scripts/nconf-hierarchical-load-merge.js
+1081 silly gunzTarPerm extractEntry test/fixtures/scripts/nconf-hierarchical-load-save.js
+1082 silly gunzTarPerm extractEntry test/fixtures/scripts/nconf-nested-env.js
+1083 silly gunzTarPerm extractEntry test/fixtures/scripts/provider-argv.js
+1084 silly gunzTarPerm extractEntry test/fixtures/scripts/provider-env.js
+1085 silly gunzTarPerm extractEntry test/mocks/mock-store.js
+1086 silly gunzTarPerm extractEntry test/stores/argv-test.js
+1087 silly gunzTarPerm extractEntry test/stores/env-test.js
+1088 silly gunzTarPerm extractEntry test/stores/file-store-test.js
+1089 silly gunzTarPerm extractEntry test/stores/literal-test.js
+1090 silly gunzTarPerm extractEntry test/stores/memory-store-test.js
+1091 silly gunzTarPerm extractEntry CHANGELOG.md
+1092 silly gunzTarPerm extractEntry .jshintrc
+1093 silly gunzTarPerm extractEntry docs/transports.md
+1094 silly gunzTarPerm extractEntry assets/put-object-rows.png
+1095 silly gunzTarPerm modified mode [ 'assets/put-object-rows.png', 511, 493 ]
+1096 silly gunzTarPerm extractEntry examples/custom-cwd.js
+1097 silly gunzTarPerm extractEntry examples/env-server.js
+1098 silly gunzTarPerm extractEntry example/default_singles.js
+1099 silly gunzTarPerm extractEntry example/divide.js
+1100 silly gunzTarPerm extractEntry example/line_count.js
+1101 silly gunzTarPerm extractEntry example/default_hash.js
+1102 silly gunzTarPerm extractEntry example/line_count_wrap.js
+1103 silly gunzTarPerm extractEntry example/nonopt.js
+1104 silly gunzTarPerm extractEntry example/reflect.js
+1105 silly gunzTarPerm extractEntry example/short.js
+1106 silly gunzTarPerm extractEntry example/string.js
+1107 silly gunzTarPerm extractEntry example/boolean_single.js
+1108 silly gunzTarPerm extractEntry example/usage-options.js
+1109 silly gunzTarPerm extractEntry example/boolean_double.js
+1110 silly gunzTarPerm extractEntry example/xup.js
+1111 silly gunzTarPerm extractEntry example/line_count_options.js
+1112 silly gunzTarPerm extractEntry readme.markdown
+1113 silly gunzTarPerm extractEntry test/_.js
+1114 silly gunzTarPerm extractEntry test/dash.js
+1115 silly gunzTarPerm extractEntry test/parse.js
+1116 silly gunzTarPerm extractEntry test/parse_modified.js
+1117 silly gunzTarPerm extractEntry test/short.js
+1118 silly gunzTarPerm extractEntry test/usage.js
+1119 silly gunzTarPerm extractEntry test/whitespace.js
+1120 silly gunzTarPerm extractEntry test/_/argv.js
+1121 silly gunzTarPerm extractEntry test/_/bin.js
+1122 silly gunzTarPerm extractEntry clone.js
+1123 silly gunzTarPerm modified mode [ 'clone.js', 438, 420 ]
+1124 silly gunzTarPerm extractEntry CONTRIBUTING.md
+1125 silly gunzTarPerm extractEntry History.md
+1126 silly gunzTarPerm extractEntry examples/reconnect.js
+1127 silly gunzTarPerm extractEntry examples/simple-protocol.js
+1128 silly gunzTarPerm extractEntry .jshintrc
+1129 silly gunzTarPerm extractEntry bin/prettyjson
+1130 silly gunzTarPerm extractEntry .travis.yml
+1131 silly gunzTarPerm modified mode [ '.travis.yml', 438, 420 ]
+1132 silly gunzTarPerm extractEntry test-apart-ctx.html
+1133 silly gunzTarPerm modified mode [ 'test-apart-ctx.html', 438, 420 ]
+1134 silly gunzTarPerm extractEntry lib/base64.js
+1135 silly gunzTarPerm extractEntry lib/file.js
+1136 silly gunzTarPerm extractEntry CHANGELOG.md
+1137 silly gunzTarPerm extractEntry docs/docco.css
+1138 silly gunzTarPerm extractEntry assets/put-object.png
+1139 silly gunzTarPerm modified mode [ 'assets/put-object.png', 511, 493 ]
+1140 silly gunzTarPerm extractEntry examples/env-vars.js
+1141 silly gunzTarPerm extractEntry examples/count-timer.js
+1142 silly gunzTarPerm extractEntry examples/verbose-protocol.js
+1143 silly gunzTarPerm extractEntry images/example1.png
+1144 silly gunzTarPerm extractEntry test.html
+1145 silly gunzTarPerm modified mode [ 'test.html', 438, 420 ]
+1146 silly gunzTarPerm extractEntry lib/format.js
+1147 verbose write writing to /usr/local/lib/node_modules/forever/node_modules/path-is-absolute/package.json
+1148 verbose write writing to /usr/local/lib/node_modules/forever/node_modules/object-assign/package.json
+1149 silly gunzTarPerm extractEntry docs/time-span.html
+1150 silly gunzTarPerm extractEntry lib/time-span.js
+1151 silly gunzTarPerm extractEntry examples/always-throw.js
+1152 silly gunzTarPerm extractEntry assets/put-rows-colors.png
+1153 silly gunzTarPerm modified mode [ 'assets/put-rows-colors.png', 511, 493 ]
+1154 silly gunzTarPerm extractEntry assets/put-rows.png
+1155 silly gunzTarPerm modified mode [ 'assets/put-rows.png', 511, 493 ]
+1156 info preinstall path-is-absolute@1.0.0
+1157 info preinstall object-assign@3.0.0
+1158 silly gunzTarPerm extractEntry lib/common.js
+1159 silly gunzTarPerm extractEntry lib/nssocket.js
+1160 silly gunzTarPerm extractEntry examples/couchdb.js
+1161 silly gunzTarPerm extractEntry images/example2.png
+1162 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/forever/node_modules/path-is-absolute/package.json
+1163 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/forever/node_modules/object-assign/package.json
+1164 silly gunzTarPerm extractEntry lib/index.js
+1165 silly gunzTarPerm extractEntry test/file-test.js
+1166 silly gunzTarPerm extractEntry images/example3.png
+1167 silly gunzTarPerm extractEntry examples/list-multiple.js
+1168 silly gunzTarPerm extractEntry examples/log-on-interval.js
+1169 silly gunzTarPerm extractEntry test/format-test.js
+1170 silly gunzTarPerm extractEntry test/function-args-test.js
+1171 verbose write writing to /usr/local/lib/node_modules/forever/node_modules/shush/package.json
+1172 silly gunzTarPerm extractEntry test/create-server-test.js
+1173 silly gunzTarPerm extractEntry test/msgpack-tcp-test.js
+1174 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/forever/node_modules/path-is-absolute/package.json
+1175 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/forever/node_modules/object-assign/package.json
+1176 info preinstall shush@1.0.0
+1177 silly gunzTarPerm extractEntry examples/multiple-processes.js
+1178 silly gunzTarPerm extractEntry examples/process-send.js
+1179 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/forever/node_modules/shush/package.json
+1180 silly gunzTarPerm extractEntry test/tcp-reconnect-test.js
+1181 silly gunzTarPerm extractEntry test/tcp-test.js
+1182 silly gunzTarPerm extractEntry test/random-string-test.js
+1183 silly gunzTarPerm extractEntry test/require-directory-test.js
+1184 silly gunzTarPerm extractEntry test/date-parser-test.js
+1185 silly gunzTarPerm extractEntry test/helpers.js
+1186 silly gunzTarPerm extractEntry images/example4.png
+1187 silly install resolved []
+1188 verbose about to build /usr/local/lib/node_modules/forever/node_modules/path-is-absolute
+1189 info build /usr/local/lib/node_modules/forever/node_modules/path-is-absolute
+1190 silly gunzTarPerm extractEntry examples/signal-ignore.js
+1191 silly gunzTarPerm extractEntry examples/server.js
+1192 silly install resolved []
+1193 verbose about to build /usr/local/lib/node_modules/forever/node_modules/object-assign
+1194 info build /usr/local/lib/node_modules/forever/node_modules/object-assign
+1195 silly prepareForInstallMany adding strip-json-comments@~0.1.1 from shush dependencies
+1196 silly prepareForInstallMany adding caller@~0.0.1 from shush dependencies
+1197 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/forever/node_modules/shush/package.json
+1198 silly gunzTarPerm extractEntry test/tls-test.js
+1199 silly gunzTarPerm extractEntry test/fixtures/ryans-cert.pem
+1200 silly gunzTarPerm extractEntry test/utile-test.js
+1201 silly gunzTarPerm extractEntry test/fixtures/read-json-file/config.json
+1202 silly gunzTarPerm extractEntry examples/error-on-timer.js
+1203 silly gunzTarPerm extractEntry examples/spawn-and-error.js
+1204 silly gunzTarPerm extractEntry assets/string-object-rows.png
+1205 silly gunzTarPerm modified mode [ 'assets/string-object-rows.png', 511, 493 ]
+1206 silly gunzTarPerm extractEntry test/time-span-test.js
+1207 info linkStuff path-is-absolute@1.0.0
+1208 silly linkStuff path-is-absolute@1.0.0 has /usr/local/lib/node_modules/forever/node_modules as its parent node_modules
+1209 silly linkStuff path-is-absolute@1.0.0 is part of a global install
+1210 silly linkStuff path-is-absolute@1.0.0 is installed into a global node_modules
+1211 info linkStuff object-assign@3.0.0
+1212 silly linkStuff object-assign@3.0.0 has /usr/local/lib/node_modules/forever/node_modules as its parent node_modules
+1213 silly linkStuff object-assign@3.0.0 is part of a global install
+1214 silly linkStuff object-assign@3.0.0 is installed into a global node_modules
+1215 silly gunzTarPerm extractEntry examples/custom-levels.js
+1216 silly gunzTarPerm extractEntry examples/exception.js
+1217 silly gunzTarPerm extractEntry images/example5.png
+1218 silly gunzTarPerm extractEntry test/fixtures/ryans-csr.pem
+1219 silly gunzTarPerm extractEntry test/fixtures/ryans-key.pem
+1220 verbose linkBins path-is-absolute@1.0.0
+1221 verbose linkMans path-is-absolute@1.0.0
+1222 verbose rebuildBundles path-is-absolute@1.0.0
+1223 verbose linkBins object-assign@3.0.0
+1224 verbose linkMans object-assign@3.0.0
+1225 verbose rebuildBundles object-assign@3.0.0
+1226 silly gunzTarPerm extractEntry test/fixtures/require-directory/helloWorld.js
+1227 silly gunzTarPerm extractEntry test/fixtures/require-directory/directory/index.js
+1228 silly cache add args [ 'strip-json-comments@~0.1.1', null ]
+1229 verbose cache add spec strip-json-comments@~0.1.1
+1230 silly cache add parsed spec { raw: 'strip-json-comments@~0.1.1',
+1230 silly cache add   scope: null,
+1230 silly cache add   name: 'strip-json-comments',
+1230 silly cache add   rawSpec: '~0.1.1',
+1230 silly cache add   spec: '>=0.1.1 <0.2.0',
+1230 silly cache add   type: 'range' }
+1231 silly addNamed strip-json-comments@>=0.1.1 <0.2.0
+1232 verbose addNamed ">=0.1.1 <0.2.0" is a valid semver range for strip-json-comments
+1233 silly addNameRange { name: 'strip-json-comments',
+1233 silly addNameRange   range: '>=0.1.1 <0.2.0',
+1233 silly addNameRange   hasData: false }
+1234 silly mapToRegistry name strip-json-comments
+1235 silly mapToRegistry using default registry
+1236 silly mapToRegistry registry https://registry.npmjs.org/
+1237 silly mapToRegistry uri https://registry.npmjs.org/strip-json-comments
+1238 verbose addNameRange registry:https://registry.npmjs.org/strip-json-comments not in flight; fetching
+1239 silly cache add args [ 'caller@~0.0.1', null ]
+1240 verbose cache add spec caller@~0.0.1
+1241 silly cache add parsed spec { raw: 'caller@~0.0.1',
+1241 silly cache add   scope: null,
+1241 silly cache add   name: 'caller',
+1241 silly cache add   rawSpec: '~0.0.1',
+1241 silly cache add   spec: '>=0.0.1 <0.1.0',
+1241 silly cache add   type: 'range' }
+1242 silly addNamed caller@>=0.0.1 <0.1.0
+1243 verbose addNamed ">=0.0.1 <0.1.0" is a valid semver range for caller
+1244 silly addNameRange { name: 'caller', range: '>=0.0.1 <0.1.0', hasData: false }
+1245 silly mapToRegistry name caller
+1246 silly mapToRegistry using default registry
+1247 silly mapToRegistry registry https://registry.npmjs.org/
+1248 silly mapToRegistry uri https://registry.npmjs.org/caller
+1249 verbose addNameRange registry:https://registry.npmjs.org/caller not in flight; fetching
+1250 info install path-is-absolute@1.0.0
+1251 silly gunzTarPerm extractEntry examples/graceful-exit.js
+1252 silly gunzTarPerm extractEntry examples/cli-multiple-start
+1253 silly gunzTarPerm modified mode [ 'examples/cli-multiple-start', 511, 493 ]
+1254 info install object-assign@3.0.0
+1255 verbose request uri https://registry.npmjs.org/strip-json-comments
+1256 verbose request no auth needed
+1257 info attempt registry request try #1 at 14:38:16
+1258 verbose request using bearer token for auth
+1259 http request GET https://registry.npmjs.org/strip-json-comments
+1260 verbose request uri https://registry.npmjs.org/caller
+1261 verbose request no auth needed
+1262 info attempt registry request try #1 at 14:38:16
+1263 verbose request using bearer token for auth
+1264 http request GET https://registry.npmjs.org/caller
+1265 info postinstall path-is-absolute@1.0.0
+1266 info postinstall object-assign@3.0.0
+1267 verbose unlock done using /root/.npm/_locks/path-is-absolute-e8b0424030803351.lock for /usr/local/lib/node_modules/forever/node_modules/path-is-absolute
+1268 verbose unlock done using /root/.npm/_locks/object-assign-348c49992b61344f.lock for /usr/local/lib/node_modules/forever/node_modules/object-assign
+1269 silly gunzTarPerm extractEntry examples/raw-mode.js
+1270 silly gunzTarPerm extractEntry examples/webhook-post.js
+1271 silly gunzTarPerm extractEntry lib/index.js
+1272 silly gunzTarPerm extractEntry lib/forever-monitor/common.js
+1273 silly gunzTarPerm extractEntry test/helpers/macros.js
+1274 silly gunzTarPerm extractEntry lib/forever-monitor/monitor.js
+1275 silly gunzTarPerm extractEntry lib/forever-monitor/plugins/index.js
+1276 silly gunzTarPerm extractEntry lib/winston.js
+1277 silly gunzTarPerm extractEntry lib/winston/common.js
+1278 silly gunzTarPerm extractEntry assets/string-rows.png
+1279 silly gunzTarPerm modified mode [ 'assets/string-rows.png', 511, 493 ]
+1280 silly gunzTarPerm extractEntry examples/inspect.js
+1281 http 200 https://registry.npmjs.org/caller
+1282 silly get cb [ 200,
+1282 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+1282 silly get     etag: '"AYGZHEZ7QKGO4GCQOBLPUCSLB"',
+1282 silly get     'content-type': 'application/json',
+1282 silly get     'content-encoding': 'gzip',
+1282 silly get     'cache-control': 'max-age=300',
+1282 silly get     'transfer-encoding': 'chunked',
+1282 silly get     'accept-ranges': 'bytes',
+1282 silly get     date: 'Wed, 11 May 2016 17:38:18 GMT',
+1282 silly get     via: '1.1 varnish',
+1282 silly get     connection: 'keep-alive',
+1282 silly get     'x-served-by': 'cache-jfk1023-JFK',
+1282 silly get     'x-cache': 'MISS',
+1282 silly get     'x-cache-hits': '0',
+1282 silly get     'x-timer': 'S1462988298.068714,VS0,VE104',
+1282 silly get     vary: 'Accept-Encoding' } ]
+1283 verbose get saving caller to /root/.npm/registry.npmjs.org/caller/.cache.json
+1284 silly gunzTarPerm extractEntry lib/forever-monitor/plugins/logger.js
+1285 silly gunzTarPerm extractEntry lib/forever-monitor/plugins/watch.js
+1286 http 200 https://registry.npmjs.org/strip-json-comments
+1287 silly get cb [ 200,
+1287 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+1287 silly get     etag: '"EYF9FD193QMICH86HBRP1YCEG"',
+1287 silly get     'content-type': 'application/json',
+1287 silly get     'content-encoding': 'gzip',
+1287 silly get     'cache-control': 'max-age=300',
+1287 silly get     'transfer-encoding': 'chunked',
+1287 silly get     'accept-ranges': 'bytes',
+1287 silly get     date: 'Wed, 11 May 2016 17:38:18 GMT',
+1287 silly get     via: '1.1 varnish',
+1287 silly get     connection: 'keep-alive',
+1287 silly get     'x-served-by': 'cache-jfk1040-JFK',
+1287 silly get     'x-cache': 'MISS',
+1287 silly get     'x-cache-hits': '0',
+1287 silly get     'x-timer': 'S1462988298.000541,VS0,VE109',
+1287 silly get     vary: 'Accept-Encoding' } ]
+1288 verbose get saving strip-json-comments to /root/.npm/registry.npmjs.org/strip-json-comments/.cache.json
+1289 verbose write writing to /usr/local/lib/node_modules/forever/node_modules/colors/package.json
+1290 silly gunzTarPerm extractEntry lib/winston/config.js
+1291 silly gunzTarPerm extractEntry lib/winston/container.js
+1292 silly gunzTarPerm extractEntry lib/winston/exception.js
+1293 info preinstall colors@0.6.2
+1294 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/forever/node_modules/colors/package.json
+1295 silly gunzTarPerm extractEntry .travis.yml
+1296 silly gunzTarPerm extractEntry test/core/check-process-test.js
+1297 silly addNameRange number 2 { name: 'caller', range: '>=0.0.1 <0.1.0', hasData: true }
+1298 silly addNameRange versions [ 'caller', [ '0.0.1', '1.0.0', '1.0.1' ] ]
+1299 silly addNamed caller@0.0.1
+1300 verbose addNamed "0.0.1" is a plain semver version for caller
+1301 silly mapToRegistry name caller
+1302 silly mapToRegistry using default registry
+1303 silly mapToRegistry registry https://registry.npmjs.org/
+1304 silly mapToRegistry uri https://registry.npmjs.org/caller
+1305 verbose addRemoteTarball https://registry.npmjs.org/caller/-/caller-0.0.1.tgz not in flight; adding
+1306 verbose addRemoteTarball [ 'https://registry.npmjs.org/caller/-/caller-0.0.1.tgz',
+1306 verbose addRemoteTarball   'f37a1d6ea10e829d94721ae29a90bb4fb52ab767' ]
+1307 silly addNameRange number 2 { name: 'strip-json-comments',
+1307 silly addNameRange   range: '>=0.1.1 <0.2.0',
+1307 silly addNameRange   hasData: true }
+1308 silly addNameRange versions [ 'strip-json-comments',
+1308 silly addNameRange   [ '0.1.0',
+1308 silly addNameRange     '0.1.1',
+1308 silly addNameRange     '0.1.2',
+1308 silly addNameRange     '0.1.3',
+1308 silly addNameRange     '1.0.0',
+1308 silly addNameRange     '1.0.1',
+1308 silly addNameRange     '1.0.2',
+1308 silly addNameRange     '1.0.3',
+1308 silly addNameRange     '1.0.4',
+1308 silly addNameRange     '2.0.0',
+1308 silly addNameRange     '2.0.1' ] ]
+1309 silly addNamed strip-json-comments@0.1.3
+1310 verbose addNamed "0.1.3" is a plain semver version for strip-json-comments
+1311 silly mapToRegistry name strip-json-comments
+1312 silly mapToRegistry using default registry
+1313 silly mapToRegistry registry https://registry.npmjs.org/
+1314 silly mapToRegistry uri https://registry.npmjs.org/strip-json-comments
+1315 verbose addRemoteTarball https://registry.npmjs.org/strip-json-comments/-/strip-json-comments-0.1.3.tgz not in flight; adding
+1316 verbose addRemoteTarball [ 'https://registry.npmjs.org/strip-json-comments/-/strip-json-comments-0.1.3.tgz',
+1316 verbose addRemoteTarball   '164c64e370a8a3cc00c9e01b539e569823f0ee54' ]
+1317 verbose write writing to /usr/local/lib/node_modules/forever/node_modules/clone/package.json
+1318 info retry fetch attempt 1 at 14:38:20
+1319 info attempt registry request try #1 at 14:38:20
+1320 http fetch GET https://registry.npmjs.org/caller/-/caller-0.0.1.tgz
+1321 verbose request using bearer token for auth
+1322 info retry fetch attempt 1 at 14:38:20
+1323 info attempt registry request try #1 at 14:38:20
+1324 http fetch GET https://registry.npmjs.org/strip-json-comments/-/strip-json-comments-0.1.3.tgz
+1325 verbose request using bearer token for auth
+1326 info preinstall clone@1.0.2
+1327 silly gunzTarPerm extractEntry test/fixtures/fork.js
+1328 silly gunzTarPerm extractEntry test/fixtures/gc.js
+1329 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/forever/node_modules/clone/package.json
+1330 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/forever/node_modules/colors/package.json
+1331 silly gunzTarPerm extractEntry test/fixtures/logs.js
+1332 silly gunzTarPerm extractEntry test/fixtures/send-pong.js
+1333 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/forever/node_modules/clone/package.json
+1334 silly install resolved []
+1335 verbose about to build /usr/local/lib/node_modules/forever/node_modules/colors
+1336 info build /usr/local/lib/node_modules/forever/node_modules/colors
+1337 silly gunzTarPerm extractEntry examples/put-object-rows.js
+1338 http fetch 200 https://registry.npmjs.org/caller/-/caller-0.0.1.tgz
+1339 http fetch 200 https://registry.npmjs.org/strip-json-comments/-/strip-json-comments-0.1.3.tgz
+1340 silly gunzTarPerm extractEntry test/fixtures/testnode
+1341 silly gunzTarPerm extractEntry test/fixtures/watch/daemon.js
+1342 silly fetchAndShaCheck shasum f37a1d6ea10e829d94721ae29a90bb4fb52ab767
+1343 silly fetchAndShaCheck shasum 164c64e370a8a3cc00c9e01b539e569823f0ee54
+1344 silly gunzTarPerm extractEntry lib/winston/logger.js
+1345 silly install resolved []
+1346 verbose about to build /usr/local/lib/node_modules/forever/node_modules/clone
+1347 info build /usr/local/lib/node_modules/forever/node_modules/clone
+1348 verbose addTmpTarball /tmp/npm-2443-f7f70e31/registry.npmjs.org/caller/-/caller-0.0.1.tgz not in flight; adding
+1349 verbose addTmpTarball already have metadata; skipping unpack for caller@0.0.1
+1350 verbose addTmpTarball /tmp/npm-2443-f7f70e31/registry.npmjs.org/strip-json-comments/-/strip-json-comments-0.1.3.tgz not in flight; adding
+1351 verbose addTmpTarball already have metadata; skipping unpack for strip-json-comments@0.1.3
+1352 info linkStuff colors@0.6.2
+1353 silly linkStuff colors@0.6.2 has /usr/local/lib/node_modules/forever/node_modules as its parent node_modules
+1354 silly linkStuff colors@0.6.2 is part of a global install
+1355 silly linkStuff colors@0.6.2 is installed into a global node_modules
+1356 silly gunzTarPerm extractEntry test/fixtures/watch/.foreverignore
+1357 silly gunzTarPerm extractEntry test/fixtures/watch/file
+1358 silly gunzTarPerm extractEntry lib/prettyjson.js
+1359 verbose linkBins colors@0.6.2
+1360 verbose linkMans colors@0.6.2
+1361 verbose rebuildBundles colors@0.6.2
+1362 info install colors@0.6.2
+1363 info postinstall colors@0.6.2
+1364 silly gunzTarPerm extractEntry test/fixtures/watch/ignoredDir/file
+1365 silly gunzTarPerm extractEntry test/fixtures/watch/removeMe
+1366 silly cache afterAdd caller@0.0.1
+1367 verbose afterAdd /root/.npm/caller/0.0.1/package/package.json not in flight; writing
+1368 silly cache afterAdd strip-json-comments@0.1.3
+1369 verbose afterAdd /root/.npm/strip-json-comments/0.1.3/package/package.json not in flight; writing
+1370 info linkStuff clone@1.0.2
+1371 silly linkStuff clone@1.0.2 has /usr/local/lib/node_modules/forever/node_modules as its parent node_modules
+1372 silly linkStuff clone@1.0.2 is part of a global install
+1373 silly linkStuff clone@1.0.2 is installed into a global node_modules
+1374 silly gunzTarPerm extractEntry lib/winston/transports.js
+1375 silly gunzTarPerm extractEntry lib/winston/config/cli-config.js
+1376 verbose unlock done using /root/.npm/_locks/colors-92fd20c205b40ba0.lock for /usr/local/lib/node_modules/forever/node_modules/colors
+1377 verbose afterAdd /root/.npm/caller/0.0.1/package/package.json written
+1378 verbose afterAdd /root/.npm/strip-json-comments/0.1.3/package/package.json written
+1379 silly install resolved [ { name: 'caller',
+1379 silly install resolved     version: '0.0.1',
+1379 silly install resolved     description: '@substack\'s caller.js as a module',
+1379 silly install resolved     main: 'index.js',
+1379 silly install resolved     directories: { test: 'test' },
+1379 silly install resolved     scripts: { test: 'tape test/*.js' },
+1379 silly install resolved     repository: { type: 'git', url: 'git://github.com/totherik/caller.git' },
+1379 silly install resolved     keywords: [ 'caller', 'file', 'require' ],
+1379 silly install resolved     author: { name: 'Erik Toth', email: 'totherik@gmail.com' },
+1379 silly install resolved     license: 'MIT',
+1379 silly install resolved     devDependencies: { tape: '~2.3.2' },
+1379 silly install resolved     gitHead: '15bef0805246629cc89fb71ded29e674009ffc45',
+1379 silly install resolved     dependencies: { tape: '~2.3.2' },
+1379 silly install resolved     bugs: { url: 'https://github.com/totherik/caller/issues' },
+1379 silly install resolved     homepage: 'https://github.com/totherik/caller',
+1379 silly install resolved     _id: 'caller@0.0.1',
+1379 silly install resolved     dist:
+1379 silly install resolved      { shasum: 'f37a1d6ea10e829d94721ae29a90bb4fb52ab767',
+1379 silly install resolved        tarball: 'https://registry.npmjs.org/caller/-/caller-0.0.1.tgz' },
+1379 silly install resolved     _from: 'caller@>=0.0.1 <0.1.0',
+1379 silly install resolved     _npmVersion: '1.3.17',
+1379 silly install resolved     _npmUser: { name: 'totherik', email: 'totherik@gmail.com' },
+1379 silly install resolved     maintainers: [ [Object] ],
+1379 silly install resolved     _shasum: 'f37a1d6ea10e829d94721ae29a90bb4fb52ab767',
+1379 silly install resolved     _resolved: 'https://registry.npmjs.org/caller/-/caller-0.0.1.tgz' },
+1379 silly install resolved   { name: 'strip-json-comments',
+1379 silly install resolved     version: '0.1.3',
+1379 silly install resolved     description: 'Strip comments from JSON. Lets you use comments in your JSON files!',
+1379 silly install resolved     keywords:
+1379 silly install resolved      [ 'json',
+1379 silly install resolved        'strip',
+1379 silly install resolved        'remove',
+1379 silly install resolved        'delete',
+1379 silly install resolved        'trim',
+1379 silly install resolved        'comments',
+1379 silly install resolved        'multiline',
+1379 silly install resolved        'parse',
+1379 silly install resolved        'config',
+1379 silly install resolved        'configuration',
+1379 silly install resolved        'conf',
+1379 silly install resolved        'settings',
+1379 silly install resolved        'util',
+1379 silly install resolved        'env',
+1379 silly install resolved        'environment',
+1379 silly install resolved        'cli',
+1379 silly install resolved        'bin' ],
+1379 silly install resolved     license: 'MIT',
+1379 silly install resolved     author:
+1379 silly install resolved      { name: 'Sindre Sorhus',
+1379 silly install resolved        email: 'sindresorhus@gmail.com',
+1379 silly install resolved        url: 'http://sindresorhus.com' },
+1379 silly install resolved     files: [ 'cli.js', 'strip-json-comments.js' ],
+1379 silly install resolved     main: 'strip-json-comments',
+1379 silly install resolved     bin: { 'strip-json-comments': 'cli.js' },
+1379 silly install resolved     repository:
+1379 silly install resolved      { type: 'git',
+1379 silly install resolved        url: 'git://github.com/sindresorhus/strip-json-comments' },
+1379 silly install resolved     scripts: { test: 'mocha' },
+1379 silly install resolved     devDependencies: { mocha: '*' },
+1379 silly install resolved     engines: { node: '>=0.8.0' },
+1379 silly install resolved     gitHead: 'cbd5aede7ccbe5d5a9065b1d47070fd99ad579af',
+1379 silly install resolved     bugs: { url: 'https://github.com/sindresorhus/strip-json-comments/issues' },
+1379 silly install resolved     homepage: 'https://github.com/sindresorhus/strip-json-comments',
+1379 silly install resolved     _id: 'strip-json-comments@0.1.3',
+1379 silly install resolved     _shasum: '164c64e370a8a3cc00c9e01b539e569823f0ee54',
+1379 silly install resolved     _from: 'strip-json-comments@>=0.1.1 <0.2.0',
+1379 silly install resolved     _npmVersion: '1.4.13',
+1379 silly install resolved     _npmUser: { name: 'sindresorhus', email: 'sindresorhus@gmail.com' },
+1379 silly install resolved     maintainers: [ [Object] ],
+1379 silly install resolved     dist:
+1379 silly install resolved      { shasum: '164c64e370a8a3cc00c9e01b539e569823f0ee54',
+1379 silly install resolved        tarball: 'https://registry.npmjs.org/strip-json-comments/-/strip-json-comments-0.1.3.tgz' },
+1379 silly install resolved     directories: {},
+1379 silly install resolved     _resolved: 'https://registry.npmjs.org/strip-json-comments/-/strip-json-comments-0.1.3.tgz' } ]
+1380 info install caller@0.0.1 into /usr/local/lib/node_modules/forever/node_modules/shush
+1381 info install strip-json-comments@0.1.3 into /usr/local/lib/node_modules/forever/node_modules/shush
+1382 info installOne caller@0.0.1
+1383 verbose installOne of caller to /usr/local/lib/node_modules/forever/node_modules/shush not in flight; installing
+1384 info installOne strip-json-comments@0.1.3
+1385 verbose installOne of strip-json-comments to /usr/local/lib/node_modules/forever/node_modules/shush not in flight; installing
+1386 verbose linkBins clone@1.0.2
+1387 verbose linkMans clone@1.0.2
+1388 verbose rebuildBundles clone@1.0.2
+1389 verbose stack Error: read ECONNRESET
+1389 verbose stack     at exports._errnoException (util.js:746:11)
+1389 verbose stack     at TCP.onread (net.js:559:26)
+1390 verbose cwd /home/conducao_app
+1391 error Linux 3.18.7+
+1392 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "forever"
+1393 error node v0.12.6
+1394 error npm  v2.11.2
+1395 error code ECONNRESET
+1396 error errno ECONNRESET
+1397 error syscall read
+1398 error network read ECONNRESET
+1398 error network This is most likely not a problem with npm itself
+1398 error network and is related to network connectivity.
+1398 error network In most cases you are behind a proxy or have bad network settings.
+1398 error network
+1398 error network If you are behind a proxy, please make sure that the
+1398 error network 'proxy' config is set properly.  See: 'npm help config'
+1399 verbose exit [ 1, true ]

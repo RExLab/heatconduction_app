@@ -1,0 +1,26 @@
+{
+  "name": "conducao_app",
+  "version": "1.0.1",
+  "description": "Node server for conduction in metal bars lab",
+  "main": "apps.js",
+  "dependencies": {
+    "express": "^4.12.3",
+    "socket.io": "^1.3.5",
+    "node-gyp": "^1.0.3",
+    "nan": "^1.8.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "apps.js",
+    "install": "node-gyp rebuild"
+  },
+  "keywords": [
+    "condução",
+    "calor",
+    "metais",
+    "rexlab"
+  ],
+  "author": "João Paulo Cardoso de Lima",
+  "license": "MIT",
+  "gypfile": true
+}
